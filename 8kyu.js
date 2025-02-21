@@ -31,3 +31,17 @@ function neutralise(s1, s2) {
 function makeUpperCase(str) {
    return str.toUpperCase()
 }
+
+
+
+//The Wide-Mouthed frog!
+
+
+function mouthSize(animal) {
+   if (animal.toUpperCase() !== 'ALLIGATOR') {
+      return "wide";
+   }
+   else {
+      return "small";
+   }
+}

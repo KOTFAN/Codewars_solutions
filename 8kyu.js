@@ -25,8 +25,9 @@ function neutralise(s1, s2) {
    }
    return res;
 }
-
-
-
 //=============================================
 
+//Upeprcase
+function makeUpperCase(str) {
+   return str.toUpperCase()
+}

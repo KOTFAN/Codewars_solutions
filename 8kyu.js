@@ -111,3 +111,11 @@ function sameCase(a, b) {
 function evenOrOdd(number) {
    return number % 2 ? "Odd" : "Even"
 }
+
+
+
+//String Templates - Bug Fixing #5
+
+function buildString(...template) {
+   return `I like ${template.join(', ')}!`;
+}

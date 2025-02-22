@@ -45,3 +45,25 @@ function mouthSize(animal) {
       return "small";
    }
 }
+
+//======================================================
+
+
+//Flick Switch
+function flickSwitch(arr) {
+   let res = [];
+   let isflickhere = false;
+
+   for (let i = 0; i < arr.length; i++) {
+
+      if (arr[i] == "flick") {
+         isflickhere = !isflickhere;
+      }
+
+
+      isflickhere ? res.push(false) : res.push(true)
+
+   }
+
+   return res;
+}

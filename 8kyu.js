@@ -102,3 +102,12 @@ function sameCase(a, b) {
 
    return (isaLetter && isbLetter) ? (((aInASCII > 64 && aInASCII < 91) && (bInASCII > 64 && bInASCII < 91)) || ((aInASCII > 96 && aInASCII < 123) && (bInASCII > 96 && bInASCII < 123)) ? 1 : 0) : -1;
 }
+
+
+
+//Odd or even
+
+
+function evenOrOdd(number) {
+   return number % 2 ? "Odd" : "Even"
+}

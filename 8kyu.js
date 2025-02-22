@@ -83,3 +83,22 @@ function quadrant(x, y) {
 
    return res;
 }
+
+
+//Check same case
+
+
+function sameCase(a, b) {
+
+
+   let aInASCII = a.charCodeAt()
+   let isaLetter = (aInASCII > 64 && aInASCII < 91) || (aInASCII > 96 && aInASCII < 123)
+
+
+   let bInASCII = b.charCodeAt()
+   let isbLetter = (bInASCII > 64 && bInASCII < 91) || (bInASCII > 96 && bInASCII < 123)
+
+
+
+   return (isaLetter && isbLetter) ? (((aInASCII > 64 && aInASCII < 91) && (bInASCII > 64 && bInASCII < 91)) || ((aInASCII > 96 && aInASCII < 123) && (bInASCII > 96 && bInASCII < 123)) ? 1 : 0) : -1;
+}

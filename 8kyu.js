@@ -122,3 +122,34 @@ function buildString(...template) {
 
 
 
+
+
+
+//Exclamation marks series #11: Replace all vowel to exclamation mark in the sentence
+function replace(s) {
+
+   const vowels = 'aeiouAEIOU';
+
+   let arr = s.split("")
+
+   for (let i = 0; i < arr.length; i++) {
+
+      if (vowels.includes(arr[i])) {
+
+         arr[i] = '!'
+      }
+
+
+   }
+   let res = arr.join("");
+
+   return res;
+}
+
+
+//Up and down, the string grows
+
+
+const STRANGE_STRING = "ß"
+
+// const upDownLen = STRANGE_STRING.toUpperCase().toLowerCase().length === 2 (will be ss)

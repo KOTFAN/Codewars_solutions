@@ -67,3 +67,19 @@ function flickSwitch(arr) {
 
    return res;
 }
+
+
+
+//quadrant
+
+function quadrant(x, y) {
+   let res = 1;
+   if (x * y > 0) {
+      x > 0 ? res = 1 : res = 3;
+   }
+   else {
+      x < 0 ? res = 2 : res = 4;
+   }
+
+   return res;
+}

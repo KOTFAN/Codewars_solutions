@@ -220,3 +220,34 @@ function warnTheSheep(queue) {
    }
    return "Pls go away and stop eating my sheep"
 }
+
+
+//=========================================
+
+
+//Total amount of points
+
+function points(games) {
+   let x = [];
+   let y = [];
+   let res = 0
+   for (let i = 0; i < games.length; i++) {
+      x.push(parseInt(games[i].slice(0, 1)))
+      y.push(parseInt(games[i].slice(2, 3)))
+   }
+
+   for (let i = 0; i < games.length; i++) {
+      if (x[i] > y[i]) {
+         res += 3
+      } else if (x[i] === y[i]) {
+
+
+         res += 1
+      }
+   }
+
+   return res
+}
+
+
+//=========================================

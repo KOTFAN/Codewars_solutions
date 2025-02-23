@@ -186,3 +186,21 @@ const flip = (d, a) => {
 function quadratic(x1, x2) {
    return [1, -x1 - x2, x1 * x2];
 }
+
+
+
+//Quarter of the year
+
+const quarterOf = (m) => {
+   if (m <= 3) {
+      return 1
+   } else if (m <= 6) {
+      return 2
+   } else if (m <= 9) {
+      return 3
+   }
+   else {
+      return 4
+   }
+
+}

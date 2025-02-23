@@ -376,3 +376,10 @@ function positiveSum(arr) {
 function solution(str) {
    return str.split('').reverse().join('')
 }
+
+
+//Convert a Number to a String!
+
+function numberToString(num) {
+   return `${num}`
+}

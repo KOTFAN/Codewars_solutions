@@ -342,3 +342,10 @@ function multiTable(number) {
    }
    return str.slice(0, str.length - 1);
 }
+
+
+//Multiply
+
+function multiply(a, b) {
+   return a * b
+}

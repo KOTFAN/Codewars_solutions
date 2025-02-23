@@ -520,3 +520,10 @@ function century(year) {
 
    return fNums;
 }
+
+//Keep Hydrated!
+
+
+function litres(time) {
+   return Math.floor(time / 2);
+}

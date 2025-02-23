@@ -563,3 +563,13 @@ function findNeedle(haystack) {
 function isDivisible(n, x, y) {
    return !!(n % x === 0 && n % y === 0)
 }
+
+//Beginner - Lost Without a Map
+
+function maps(x) {
+   let arr = [];
+   for (let i = 0; i < x.length; i++) {
+      arr.push(2 * x[i])
+   }
+   return arr
+}

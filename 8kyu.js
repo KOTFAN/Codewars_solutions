@@ -458,3 +458,15 @@ function findSmallestInt(arr) {
 function noSpace(x) {
    return x.split(" ").join('')
 }
+
+
+
+//Counting sheep...
+
+function countSheeps(sheep) {
+   let count = 0;
+   for (let i = 0; i < sheep.length; i++) {
+      sheep[i] ? count += 1 : count
+   }
+   return count
+}

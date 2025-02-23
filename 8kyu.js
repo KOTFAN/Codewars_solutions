@@ -505,3 +505,18 @@ function abbrevName(name) {
    return name.join('.')
 
 }
+
+
+//Century From Year
+
+
+function century(year) {
+   const strYear = year.toString();
+   const fNums = +strYear.slice(0, strYear.length - 2)
+   const lNums = +strYear.slice(strYear.length - 2, strYear.length)
+   if (lNums !== 0) {
+      return fNums + 1;
+   }
+
+   return fNums;
+}

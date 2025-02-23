@@ -388,8 +388,17 @@ function numberToString(num) {
 
 //Convert boolean values to strings 'Yes' or 'No'.
 
-
-
 function boolToWord(bool) {
    return bool ? "Yes" : "No"
+}
+
+
+//Square(n) Sum
+
+function squareSum(numbers) {
+   let res = 0;
+   for (let i = 0; i < numbers.length; i++) {
+      res += numbers[i] ** 2;
+   }
+   return res;
 }

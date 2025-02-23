@@ -536,3 +536,16 @@ function litres(time) {
 function digitize(n) {
    return n.toString().split('').reverse().map(Number)
 }
+
+
+//Returning Strings
+
+
+function greet(name) {
+   return `Hello, ${name} how are you doing today?`
+}
+
+//Opposites Attract
+function lovefunc(flower1, flower2) {
+   return flower1 % 2 !== flower2 % 2 ? true : false
+}

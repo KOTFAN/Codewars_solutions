@@ -300,15 +300,8 @@ function createArray(number) {
 //=========================================
 
 
+//Grasshopper - Bug Squashing
 
-
-
-
-
-
-
-
-//
 
 
 // var health = 100
@@ -323,6 +316,18 @@ function createArray(number) {
 //   buyHealth()
 //   printStatus()
 // }
+
+
+
+//=========================================
+
+//Find the Integral
+
+
+function integrate(c, e) {
+   return `${c / (e + 1)}x^${e + 1}`
+}
+
 
 
 //=========================================

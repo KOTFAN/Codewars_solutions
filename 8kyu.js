@@ -273,7 +273,7 @@ function getSize(width, height, depth) {
 
 
 
-//
+//Return the day
 
 
 function whatday(num) {
@@ -283,6 +283,18 @@ function whatday(num) {
    return days[num] ? days[num] : "Wrong, please enter a number between 1 and 7"
 
 }
+//=========================================
 
+
+
+
+//Unfinished Loop - Bug Fixing #1
+function createArray(number) {
+   const newArray = [];
+   for (let counter = 1; counter <= number; counter++) {
+      newArray.push(counter);
+   }
+   return newArray;
+}
 
 //=========================================

@@ -402,3 +402,10 @@ function squareSum(numbers) {
    }
    return res;
 }
+
+
+//Opposite number
+
+function opposite(number) {
+   return -number
+}

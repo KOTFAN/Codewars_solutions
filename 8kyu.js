@@ -596,3 +596,36 @@ function areYouPlayingBanjo(name) {
 function booleanToString(b) {
    return b.toString()
 }
+
+
+//Sum Arrays
+
+function sum(numbers) {
+   let sum = 0;
+
+   for (let i = 0; i < numbers.length; i++) {
+      sum = sum + numbers[i]
+   }
+
+   return sum;
+}
+
+
+
+
+
+//How good are you really?
+
+function betterThanAverage(classPoints, yourPoints) {
+   let meanInClass = 0;
+
+
+   for (let i = 0; i < classPoints.length; i++) {
+      meanInClass = meanInClass + classPoints[i]
+   }
+   meanInClass = meanInClass / (classPoints.length)
+
+   return meanInClass < yourPoints
+
+
+}

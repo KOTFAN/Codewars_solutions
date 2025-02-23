@@ -298,3 +298,31 @@ function createArray(number) {
 }
 
 //=========================================
+
+
+
+
+
+
+
+
+
+
+//
+
+
+// var health = 100
+// var position = 0
+// var coins = 0
+
+// function main (health,position,coins) {
+//   rollDice()
+//   move()
+//   combat()
+//   getCoins()
+//   buyHealth()
+//   printStatus()
+// }
+
+
+//=========================================

@@ -147,9 +147,36 @@ function replace(s) {
 }
 
 
-//Up and down, the string grows
+//
 
 
 const STRANGE_STRING = "ß"
 
 // const upDownLen = STRANGE_STRING.toUpperCase().toLowerCase().length === 2 (will be ss)
+
+//========================================================
+
+
+
+
+
+//Gravity Flip
+
+const flip = (d, a) => {
+   for (let i = 0; i < a.length; i++) {
+      for (let j = 0; j < a.length - 1; j++) {
+         if (a[j] > a[j + 1]) {
+            const temp = a[j];
+            a[j] = a[j + 1];
+            a[j + 1] = temp;
+         }
+      }
+
+
+   }
+
+   return d === 'R' ? a : a.reverse()
+}
+
+
+//========================================================

@@ -331,3 +331,14 @@ function integrate(c, e) {
 
 
 //=========================================
+
+
+//Multiplication table for number
+
+function multiTable(number) {
+   let str = '';
+   for (let i = 1; i <= 10; i++) {
+      str = str + `${i} * ${number} = ${i * number}\n`
+   }
+   return str.slice(0, str.length - 1);
+}

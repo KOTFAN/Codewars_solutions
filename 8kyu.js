@@ -417,3 +417,9 @@ function removeChar(str) {
    return str.slice(1, str.length - 1)
 
 };
+
+
+//String repeat
+function repeatStr(n, s) {
+   return s.repeat(n);
+}

@@ -583,3 +583,16 @@ function paperwork(n, m) {
    }
    return n * m;
 }
+
+
+//Are You Playing Banjo?
+
+function areYouPlayingBanjo(name) {
+
+   return name[0].toUpperCase() === 'R' ? `${name} plays banjo` : `${name} does not play banjo`;
+}
+
+//Convert a Boolean to a String
+function booleanToString(b) {
+   return b.toString()
+}

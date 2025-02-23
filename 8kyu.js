@@ -493,3 +493,15 @@ function basicOp(op, v1, v2) {
    }
 
 }
+
+
+//Abbreviate a Two Word Name
+
+
+function abbrevName(name) {
+   name = name.toUpperCase().split(' ')
+   name[0] = name[0].slice(0, 1)
+   name[1] = name[1].slice(0, 1)
+   return name.join('.')
+
+}

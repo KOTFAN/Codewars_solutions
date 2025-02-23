@@ -476,3 +476,20 @@ function countSheeps(sheep) {
 const stringToNumber = function (str) {
    return parseInt(str);
 }
+
+
+//Basic Mathematical Operations
+
+
+function basicOp(op, v1, v2) {
+   if (op === '+') {
+      return v1 + v2;
+   } else if (op === '-') {
+      return v1 - v2;
+   } else if (op === '*') {
+      return v1 * v2;
+   } else {
+      return v1 / v2
+   }
+
+}

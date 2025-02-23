@@ -556,3 +556,10 @@ function lovefunc(flower1, flower2) {
 function findNeedle(haystack) {
    return `found the needle at position ${haystack.indexOf('needle')}`
 }
+
+
+
+//Is n divisible by x and y?
+function isDivisible(n, x, y) {
+   return !!(n % x === 0 && n % y === 0)
+}

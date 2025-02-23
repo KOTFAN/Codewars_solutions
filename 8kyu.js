@@ -251,3 +251,38 @@ function points(games) {
 
 
 //=========================================
+
+
+
+//Take the Derivative
+
+
+
+function derive(c, e) {
+   return `${c * e}x^${e - 1}`
+}
+
+
+
+//=========================================
+
+//Surface Area and Volume of a Box
+function getSize(width, height, depth) {
+   return [2 * ((width * height) + (height * depth) + (width * depth)), width * height * depth]
+}
+
+
+
+//
+
+
+function whatday(num) {
+
+   const days = [0, "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+   return days[num] ? days[num] : "Wrong, please enter a number between 1 and 7"
+
+}
+
+
+//=========================================

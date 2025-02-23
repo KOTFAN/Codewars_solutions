@@ -204,3 +204,19 @@ const quarterOf = (m) => {
    }
 
 }
+
+
+//=========================================
+
+
+//A wolf in sheep's clothing
+
+
+function warnTheSheep(queue) {
+   queue = queue.reverse();
+   let woolfIndex = queue.indexOf("wolf")
+   if (woolfIndex !== 0) {
+      return `Oi! Sheep number ${woolfIndex}! You are about to be eaten by a wolf!`
+   }
+   return "Pls go away and stop eating my sheep"
+}

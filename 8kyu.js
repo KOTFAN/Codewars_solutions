@@ -640,7 +640,7 @@ function past(h, m, s) {
 }
 
 
-
+//Calculate average
 function findAverage(array) {
    let mean = 0;
    if (array.length) {
@@ -653,4 +653,21 @@ function findAverage(array) {
    }
 
    return mean;
+}
+
+
+
+// Invert values
+
+
+function invert(array) {
+
+   if (array.length) {
+      let result = [];
+      for (let i = 0; i < array.length; i++) {
+         result.push(-array[i])
+      }
+      return result;
+   }
+   return [];
 }

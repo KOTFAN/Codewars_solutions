@@ -706,3 +706,22 @@ function smash(words) {
 
    return words.join(' ')
 };
+
+
+
+//Fake Binary
+function fakeBin(x) {
+   let bin = x.split('');
+
+   for (let i = 0; i < bin.length; i++) {
+      bin[i] = parseInt(bin[i]);
+      if (bin[i] < 5) {
+         bin[i] = 0;
+      } else {
+         bin[i] = 1;
+      }
+   }
+
+   return bin.join('');
+
+}

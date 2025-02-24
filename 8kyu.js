@@ -700,3 +700,9 @@ function countPositivesSumNegatives(input) {
 
 
 
+
+//Sentence Smash
+function smash(words) {
+
+   return words.join(' ')
+};

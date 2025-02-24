@@ -741,3 +741,11 @@ function grow(x) {
    return res;
 
 }
+
+
+//Calculate BMI
+
+function bmi(w, h) {
+   let res = w / (h ** 2)
+   return res > 30 ? "Obese" : (res <= 18.5 ? "Underweight" : (res <= 25 ? "Normal" : "Overweight"))
+}

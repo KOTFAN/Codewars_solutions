@@ -638,3 +638,19 @@ function betterThanAverage(classPoints, yourPoints) {
 function past(h, m, s) {
    return 1000 * (h * 60 * 60 + m * 60 + s)
 }
+
+
+
+function findAverage(array) {
+   let mean = 0;
+   if (array.length) {
+
+      for (let i = 0; i < array.length; i++) {
+         mean += array[i]
+      }
+
+      mean = mean / array.length
+   }
+
+   return mean;
+}

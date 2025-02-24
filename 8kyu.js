@@ -676,3 +676,27 @@ function invert(array) {
 function simpleMultiplication(n) {
    return n % 2 ? n * 9 : n * 8
 }
+
+
+
+
+//Count of positives / sum of negatives
+function countPositivesSumNegatives(input) {
+   if (input && input.length) {
+      let count = [0, 0]
+
+      for (let i = 0; i < input.length; i++) {
+         if (input[i] > 0) {
+            count[0] += 1;
+         } else {
+            count[1] += input[i]
+         }
+
+      }
+      return count;
+   }
+   return [];
+}
+
+
+

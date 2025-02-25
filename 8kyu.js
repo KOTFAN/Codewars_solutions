@@ -897,6 +897,7 @@ function travelDistance(avgSpeed, travelTime) {
 
 
 //Closest elevator
+
 function elevator(left, right, call) {
    return Math.abs(left - call) >= Math.abs(right - call) ? 'right' : 'left'
 }

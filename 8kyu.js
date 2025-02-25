@@ -801,7 +801,6 @@ function doubleInteger(i) {
 }
 
 //Rock Paper Scissors!
-
 const rps = (p1, p2) => {
    if (p1 === p2) {
       return "Draw!"
@@ -809,3 +808,14 @@ const rps = (p1, p2) => {
       return (p1 === 'scissors' && p2 === 'paper') || (p1 === 'paper' && p2 === 'rock') || (p1 === 'rock' && p2 === 'scissors') ? "Player 1 won!" : "Player 2 won!"
    }
 };
+
+
+
+//If you can't sleep, just count sheep!!
+const countSheep = (num) => {
+   let res = '';
+   for (let i = 1; i <= num; i++) {
+      res += `${i} sheep...`
+   }
+   return res;
+}

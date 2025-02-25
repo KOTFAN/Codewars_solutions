@@ -819,3 +819,40 @@ const countSheep = (num) => {
    }
    return res;
 }
+
+
+
+//Convert a string to an array
+let stringToArray = (string) => string.split(' ')
+
+
+const min = function (list) {
+   let min = list[0];
+   if (list.length > 1) {
+
+      for (let i = 1; i < list.length; i++) {
+         if (min > list[i]) {
+            min = list[i]
+         }
+      }
+   }
+   return min;
+}
+
+
+//Find Maximum and Minimum Values of a List
+const max = function (list) {
+   let max = list[0]
+
+   if (list.length > 1) {
+
+      for (let i = 1; i < list.length; i++) {
+         if (max < list[i]) {
+            max = list[i]
+         }
+      }
+   }
+
+
+   return max;
+}

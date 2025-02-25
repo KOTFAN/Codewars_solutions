@@ -786,3 +786,8 @@ function countBy(x, n) {
 const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
    return distanceToPump <= mpg * fuelLeft
 };
+
+//DNA to RNA Conversion
+function DNAtoRNA(dna) {
+   return dna.split('').map((l) => l === 'T' ? l = 'U' : l).join('')
+}

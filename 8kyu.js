@@ -749,3 +749,14 @@ function bmi(w, h) {
    let res = w / (h ** 2)
    return res > 30 ? "Obese" : (res <= 18.5 ? "Underweight" : (res <= 25 ? "Normal" : "Overweight"))
 }
+
+
+
+//Reversed sequence
+const reverseSeq = n => {
+   let res = [];
+   for (n; n > 0; n--) {
+      res.push(n)
+   }
+   return res;
+};

@@ -894,3 +894,14 @@ function travelDistance(avgSpeed, travelTime) {
 
    return travelKms;
 }
+
+
+//Closest elevator
+function elevator(left, right, call) {
+   return Math.abs(left - call) >= Math.abs(right - call) ? 'right' : 'left'
+}
+
+//Pillars
+function pillars(numPill, dist, width) {
+   return numPill > 1 ? numPill * (100 * dist + width) - 100 * dist - 2 * width : 0
+}

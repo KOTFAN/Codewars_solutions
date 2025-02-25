@@ -841,6 +841,19 @@ const min = function (list) {
 
 
 //Find Maximum and Minimum Values of a List
+const min = function (list) {
+   let min = list[0];
+   if (list.length > 1) {
+
+      for (let i = 1; i < list.length; i++) {
+         if (min > list[i]) {
+            min = list[i]
+         }
+      }
+   }
+   return min;
+}
+
 const max = function (list) {
    let max = list[0]
 
@@ -855,4 +868,14 @@ const max = function (list) {
 
 
    return max;
+}
+
+
+
+
+//Jenny's secret message
+function greet(name) {
+
+   if (name === "Johnny") return "Hello, my love!";
+   return "Hello, " + name + "!";
 }

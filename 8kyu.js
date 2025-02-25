@@ -841,7 +841,7 @@ const min = function (list) {
 
 
 //Find Maximum and Minimum Values of a List
-const min = function (list) {
+const min1 = function (list) {
    let min = list[0];
    if (list.length > 1) {
 
@@ -878,4 +878,19 @@ function greet(name) {
 
    if (name === "Johnny") return "Hello, my love!";
    return "Hello, " + name + "!";
+}
+
+
+//[BUG] XCOM-409: Flight distance of Interceptor planes is miscalculated
+function travelDistance(avgSpeed, travelTime) {
+
+   const travelHours = travelTime / 60;//hours
+
+   const knotsToKmh = 1.852;
+   const speadInKnots = avgSpeed * knotsToKmh
+
+
+   const travelKms = speadInKnots * travelHours;
+
+   return travelKms;
 }

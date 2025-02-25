@@ -905,3 +905,9 @@ function elevator(left, right, call) {
 function pillars(numPill, dist, width) {
    return numPill > 1 ? numPill * (100 * dist + width) - 100 * dist - 2 * width : 0
 }
+
+
+//Twice as old
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+   return Math.abs(dadYearsOld - 2 * sonYearsOld)
+}

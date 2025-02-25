@@ -762,6 +762,22 @@ const reverseSeq = n => {
 };
 
 
+
+//Is he gonna survive?
 function hero(bullets, dragons) {
    return dragons <= bullets / 2
 }
+
+
+
+//Count by X
+function countBy(x, n) {
+   let z = [];
+
+   for (n; n > 0; n--) {
+      z.push(n * x)
+   }
+
+   return z.reverse();
+}
+

@@ -990,3 +990,9 @@ const greet = (n, o) => n === o ? 'Hello boss' : 'Hello guest'
 function rentalCarCost(d) {
    return d >= 7 ? d * 40 - 50 : d >= 3 ? d * 40 - 20 : d * 40
 }
+
+
+//Sum Mixed Array
+function sumMix(x) {
+   return x.map((i) => parseInt(i)).reduce((sum, v) => sum + v, 0)
+}

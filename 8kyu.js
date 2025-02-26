@@ -947,7 +947,34 @@ function getGrade(s1, s2, s3) {
 
 }
 
-
+//Array plus array
 function arrayPlusArray(arr1, arr2) {
    return arr1.reduce((sum, element) => sum + element, 0) + arr2.reduce((sum, element) => sum + element, 0);;
+}
+
+
+
+//Sum without highest and lowest number
+function sumArray(array) {
+   if (!array || array.length < 3) {
+      return 0;
+   }
+   let min = array[0];
+   let max = array[0];
+   let sum = 0;
+   for (let i = 0; i < array.length; i++) {
+      sum += array[i]
+      if (array[i] > max) {
+         max = array[i];
+      }
+
+      if (array[i] < min) {
+         min = array[i];
+      }
+
+
+
+   }
+   return sum - min - max;
+
 }

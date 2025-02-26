@@ -983,3 +983,10 @@ const areaOrPerimeter = function (l, w) {
 
 //Grasshopper - Personalized Message
 const greet = (n, o) => n === o ? 'Hello boss' : 'Hello guest'
+
+
+
+//Transportation on vacation
+function rentalCarCost(d) {
+   return d >= 7 ? d * 40 - 50 : d >= 3 ? d * 40 - 20 : d * 40
+}

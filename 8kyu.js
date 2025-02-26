@@ -1002,4 +1002,12 @@ function removeExclamationMarks(s) {
    return s.replace(/!/g, '');
 }
 
+//Get the mean of an array
+function getAverage(marks) {
+   return Math.floor(marks.reduce((s, v) => v + s) / marks.length)
+}
 
+//The Feast of Many Beasts
+function feast(beast, dish) {
+   return beast[0] === dish[0] && beast[beast.length - 1] === dish[dish.length - 1] ? true : false
+}

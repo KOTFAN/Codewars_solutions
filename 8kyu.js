@@ -925,3 +925,29 @@ solution = (molarMass1, molarMass2, givenMass1, givenMass2, volume, temp) => {
 function reverseWords(str) {
    return str.split(' ').reverse().join(' ');
 }
+
+
+
+//Grasshopper - Grade book
+function getGrade(s1, s2, s3) {
+   let score = (s1 + s2 + s3) / 3
+   if (score >= 90) {
+      return 'A';
+   } else if (score >= 80) {
+      return 'B';
+   } else if (score >= 70) {
+      return 'C';
+   }
+   else if (score >= 60) {
+      return 'D';
+   }
+   else {
+      return 'F'
+   }
+
+}
+
+
+function arrayPlusArray(arr1, arr2) {
+   return arr1.reduce((sum, element) => sum + element, 0) + arr2.reduce((sum, element) => sum + element, 0);;
+}

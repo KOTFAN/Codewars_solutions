@@ -971,10 +971,12 @@ function sumArray(array) {
       if (array[i] < min) {
          min = array[i];
       }
-
-
-
    }
    return sum - min - max;
 
 }
+
+//Area or Perimeter
+const areaOrPerimeter = function (l, w) {
+   return w === l ? w * l : 2 * (w + l)
+};

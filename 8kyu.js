@@ -980,3 +980,6 @@ function sumArray(array) {
 const areaOrPerimeter = function (l, w) {
    return w === l ? w * l : 2 * (w + l)
 };
+
+//Grasshopper - Personalized Message
+const greet = (n, o) => n === o ? 'Hello boss' : 'Hello guest'

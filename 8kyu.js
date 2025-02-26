@@ -996,3 +996,10 @@ function rentalCarCost(d) {
 function sumMix(x) {
    return x.map((i) => parseInt(i)).reduce((sum, v) => sum + v, 0)
 }
+
+//Remove exclamation marks
+function removeExclamationMarks(s) {
+   return s.replace(/!/g, '');
+}
+
+

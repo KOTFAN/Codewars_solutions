@@ -1012,9 +1012,14 @@ function feast(beast, dish) {
    return beast[0] === dish[0] && beast[beast.length - 1] === dish[dish.length - 1] ? true : false
 }
 
-
-
 //Double Char
 function doubleChar(str) {
    return str.split('').map((l) => l + l).join('')
+}
+
+
+//L1: Set Alarm
+function setAlarm(employed, vacation) {
+   return employed && !vacation ? true : false
+
 }

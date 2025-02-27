@@ -1037,3 +1037,19 @@ function monkeyCount(n) {
    }
    return res;
 }
+
+//Do I get a bonus?
+function bonusTime(salary, bonus) {
+   return bonus ? `£${10 * salary}` : `£${salary}`
+}
+
+//Removing Elements
+function removeEveryOther(arr) {
+   let res = [];
+   for (let i = 0; i < arr.length; i++) {
+      if (i % 2 === 0) {
+         res.push(arr[i])
+      }
+   }
+   return res;
+}

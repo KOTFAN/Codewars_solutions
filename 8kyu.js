@@ -1069,3 +1069,18 @@ function otherAngle(a, b) {
 function cockroachSpeed(s) {
    return Math.floor(s * 100000 / 3600)
 }
+
+//Keep up the hoop
+function hoopCount(n) {
+   return n < 10 ? "Keep at it until you get it" : "Great, now move on to tricks"
+}
+
+//Grasshopper - Check for factor
+function checkForFactor(base, factor) {
+   return base % factor === 0
+}
+
+//All Star Code Challenge #18
+function strCount(str, letter) {
+   return str.split('').reduce((count, l) => l === letter ? count + 1 : count, 0)
+}

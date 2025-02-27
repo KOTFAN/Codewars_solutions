@@ -1084,3 +1084,13 @@ function checkForFactor(base, factor) {
 function strCount(str, letter) {
    return str.split('').reduce((count, l) => l === letter ? count + 1 : count, 0)
 }
+
+//Find the first non-consecutive number
+function firstNonConsecutive(arr) {
+   for (let i = 0; i < arr.length - 1; i++) {
+      if (arr[i] + 1 !== arr[i + 1]) {
+         return arr[i + 1]
+      }
+   }
+   return null
+}

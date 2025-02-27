@@ -7,3 +7,8 @@ function getCount(str) {
 }
 
 
+//Disemvowel Trolls
+function disemvowel(str) {
+   const vowels = ['a', 'e', 'i', 'o', 'u']
+   return str.split('').filter((l) => !vowels.includes(l.toLowerCase())).join('');
+}

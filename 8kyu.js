@@ -1058,3 +1058,14 @@ function removeEveryOther(arr) {
 function enough(cap, on, wait) {
    return cap - on >= wait ? 0 : wait - (cap - on)
 }
+
+
+//Third Angle of a Triangle
+function otherAngle(a, b) {
+   return 180 - a - b;
+}
+
+//Beginner Series #4 Cockroach
+function cockroachSpeed(s) {
+   return Math.floor(s * 100000 / 3600)
+}

@@ -1028,3 +1028,12 @@ function setAlarm(employed, vacation) {
 function updateLight(current) {
    return current === 'green' ? 'yellow' : current === 'yellow' ? 'red' : 'green'
 }
+
+//Count the Monkeys!
+function monkeyCount(n) {
+   let res = [];
+   for (let i = 1; i <= n; i++) {
+      res.push(i)
+   }
+   return res;
+}

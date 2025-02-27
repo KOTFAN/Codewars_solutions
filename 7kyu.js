@@ -12,3 +12,8 @@ function disemvowel(str) {
    const vowels = ['a', 'e', 'i', 'o', 'u']
    return str.split('').filter((l) => !vowels.includes(l.toLowerCase())).join('');
 }
+
+//Square Every Digit
+function squareDigits(num) {
+   return parseInt(num.toString().split('').map((n) => (+n) ** 2).join(''))
+}

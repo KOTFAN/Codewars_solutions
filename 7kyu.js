@@ -43,8 +43,6 @@ function findMiddle(str) {
    if (typeof str !== "string") {
       return -1
    }
-
-
    const intsArr = str.split('').map((n) => parseInt(n)).filter((c) => !isNaN(c));
    if (intsArr.length > 0) {
       const prod = intsArr.reduce((p, v) => p * v, 1).toString()
@@ -54,8 +52,15 @@ function findMiddle(str) {
 
       return prod.length > 0 ? res : -1
    }
-
    return -1
-
 }
 
+
+//Get the Middle Character
+function getMiddle(s) {
+   const sL = s.length;
+   if (s.length < 3) {
+      return s
+   }
+   return sL % 2 === 0 ? s.slice(Math.floor(sL / 2 - 1), -Math.floor(sL / 2 - 1)) : s.slice(Math.floor(sL / 2), -Math.floor(sL / 2));
+}

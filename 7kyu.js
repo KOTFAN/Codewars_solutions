@@ -17,3 +17,12 @@ function disemvowel(str) {
 function squareDigits(num) {
    return parseInt(num.toString().split('').map((n) => (+n) ** 2).join(''))
 }
+
+//Highest and Lowest
+function highAndLow(numbers) {
+   let arrOfNuns = numbers.split(' ').map((n) => +n)
+   let max = Math.max(...arrOfNuns)
+   let min = Math.min(...arrOfNuns)
+
+   return `${max} ${min}`
+}

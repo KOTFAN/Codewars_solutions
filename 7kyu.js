@@ -64,3 +64,9 @@ function getMiddle(s) {
    }
    return sL % 2 === 0 ? s.slice(Math.floor(sL / 2 - 1), -Math.floor(sL / 2 - 1)) : s.slice(Math.floor(sL / 2), -Math.floor(sL / 2));
 }
+
+
+//You're a square!
+const isSquare = function (n) {
+   return Math.sqrt(n) === Math.floor(Math.sqrt(n));
+}

@@ -27,7 +27,11 @@ function highAndLow(numbers) {
    return `${max} ${min}`
 }
 
-
+//
 function descendingOrder(n) {
    return parseInt(n.toString().split('').sort((a, b) => b - a).join(''))
+}
+//List Filtering
+function filter_list(l) {
+   return l.filter((c) => typeof c === "number")
 }

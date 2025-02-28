@@ -27,7 +27,7 @@ function highAndLow(numbers) {
    return `${max} ${min}`
 }
 
-//
+//Descending Order
 function descendingOrder(n) {
    return parseInt(n.toString().split('').sort((a, b) => b - a).join(''))
 }
@@ -35,3 +35,27 @@ function descendingOrder(n) {
 function filter_list(l) {
    return l.filter((c) => typeof c === "number")
 }
+
+
+
+//Find the Middle of the Product
+function findMiddle(str) {
+   if (typeof str !== "string") {
+      return -1
+   }
+
+
+   const intsArr = str.split('').map((n) => parseInt(n)).filter((c) => !isNaN(c));
+   if (intsArr.length > 0) {
+      const prod = intsArr.reduce((p, v) => p * v, 1).toString()
+      const midleLen = prod.length % 2 === 1 ? 1 : 2;
+      const delCount = (prod.length - midleLen) / 2
+      const res = prod.length > 2 ? parseInt(prod.slice(delCount).slice(0, midleLen)) : parseInt(prod)
+
+      return prod.length > 0 ? res : -1
+   }
+
+   return -1
+
+}
+

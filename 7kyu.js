@@ -106,3 +106,8 @@ function isIsogram(str) {
 
    return true
 }
+
+//Exes and Ohs
+function XO(str) {
+   return !str.toLowerCase().split('').reduce((counter, value) => value === 'x' ? counter + 1 : (value === 'o' ? counter - 1 : counter), 0)
+}

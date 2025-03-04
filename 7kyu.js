@@ -111,3 +111,20 @@ function isIsogram(str) {
 function XO(str) {
    return !str.toLowerCase().split('').reduce((counter, value) => value === 'x' ? counter + 1 : (value === 'o' ? counter - 1 : counter), 0)
 }
+
+
+//Jaden Casing Strings
+Object.defineProperty(
+   String.prototype,
+   'toJadenCase',
+   {
+      value:
+         function toJadenCase() {
+            const words = this.split(' ')
+            for (let i = 0; i < words.length; i++) {
+               words[i] = words[i][0].toUpperCase() + words[i].slice(1);
+            }
+            return words.join(' ')
+         }
+   }
+);

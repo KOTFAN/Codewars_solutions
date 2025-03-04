@@ -188,3 +188,11 @@ function friend(friends) {
    const res = friends.filter((f) => f.length === 4)
    return res
 }
+
+//Two to One
+function longest(s1, s2) {
+   let res = [];
+   const set = new Set(s1 + s2).forEach((v) => res.push(v))
+
+   return res.sort().join('')
+}

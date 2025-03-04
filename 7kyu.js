@@ -172,3 +172,13 @@ function sumTwoSmallestNumbers(numbers) {
    numbers.sort((a, b) => a - b)
    return numbers[0] + numbers[1]
 }
+
+//Beginner Series #3 Sum of Numbers
+function getSum(a, b) {
+   const sorted = [a, b].sort((a, b) => a - b)
+   let res = 0;
+   for (let i = sorted[0]; i <= sorted[1]; i++) {
+      res += i
+   }
+   return res
+}

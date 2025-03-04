@@ -182,3 +182,9 @@ function getSum(a, b) {
    }
    return res
 }
+
+//Friend or Foe?
+function friend(friends) {
+   const res = friends.filter((f) => f.length === 4)
+   return res
+}

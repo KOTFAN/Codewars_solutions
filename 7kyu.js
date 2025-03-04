@@ -166,3 +166,9 @@ function dnaStrand(dna) {
 function maskify(cc) {
    return cc.length > 4 ? '#'.repeat(cc.length - 4) + cc.slice(-4) : cc.slice(-4)
 }
+
+//Sum of two lowest positive integers
+function sumTwoSmallestNumbers(numbers) {
+   numbers.sort((a, b) => a - b)
+   return numbers[0] + numbers[1]
+}

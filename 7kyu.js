@@ -70,3 +70,22 @@ function getMiddle(s) {
 const isSquare = function (n) {
    return Math.sqrt(n) === Math.floor(Math.sqrt(n));
 }
+
+
+//Mumbling
+function accum(s) {
+   let res = [];
+   for (let i = 0; i < s.length; i++) {
+      res.push(s[i].toUpperCase())
+
+      for (let j = 0; j < i; j++) {
+
+         res.push(s[i].toLowerCase())
+      }
+
+      res.push('-')
+
+   }
+   res.pop()
+   return res.join('')
+}

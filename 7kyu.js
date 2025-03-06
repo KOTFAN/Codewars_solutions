@@ -219,3 +219,13 @@ function solution(str, ending) {
 }
 
 //endsWith )
+
+
+//Find the next perfect square!
+function findNextSquare(sq) {
+   let n = Math.sqrt(sq)
+   if (n === Math.floor(n)) {
+      return (n + 1) * (n + 1)
+   }
+   return -1;
+}

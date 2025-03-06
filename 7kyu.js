@@ -201,3 +201,21 @@ function longest(s1, s2) {
 function openOrSenior(data) {
    return data.map((v) => v[0] >= 55 && v[1] > 7 ? 'Senior' : 'Open')
 }
+
+
+//String ends with?
+function solution(str, ending) {
+   str = str.split('').reverse()
+   ending = ending.split('').reverse()
+
+
+   for (let i = 0; i < ending.length; i++) {
+      console.log(str[i])
+      if (ending[i] !== str[i]) {
+         return false
+      }
+   }
+   return true
+}
+
+//endsWith )

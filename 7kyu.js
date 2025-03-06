@@ -229,3 +229,8 @@ function findNextSquare(sq) {
    }
    return -1;
 }
+
+//Printer Errors
+function printerError(s) {
+   return `${s.split('').reduce((c, v) => v.charCodeAt() < 110 ? c + 0 : c + 1, 0)}/${s.length}`
+}

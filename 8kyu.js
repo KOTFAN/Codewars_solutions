@@ -1194,3 +1194,8 @@ function correct(string) {
    return string.replace(/[150]/g, l => dic[l]);
 
 }
+
+
+function testEven(n) {
+   return !(n % 2)
+}

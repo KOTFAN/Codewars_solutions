@@ -1094,3 +1094,9 @@ function firstNonConsecutive(arr) {
    }
    return null
 }
+
+
+//Parse nice int from char problem
+function getAge(inputString) {
+   return +inputString[0]
+}

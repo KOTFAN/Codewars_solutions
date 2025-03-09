@@ -1199,3 +1199,10 @@ function correct(string) {
 function testEven(n) {
    return !(n % 2)
 }
+
+
+const humanYearsCatYearsDogYears = function (humanYears) {
+
+
+   return [humanYears, humanYears >= 2 ? 15 + 9 + 4 * (humanYears - 2) : 15, humanYears >= 2 ? 15 + 9 + 5 * (humanYears - 2) : 15];
+}

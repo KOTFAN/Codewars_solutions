@@ -1214,11 +1214,15 @@ function isPalindrome(x) {
 }
 
 //Powers of 2
-
 function powersOfTwo(n) {
    let res = [];
    for (let i = 0; i <= n; i++) {
       res.push(2 ** i)
    }
    return res
+}
+
+//altERnaTIng cAsE <=> ALTerNAtiNG CaSe
+String.prototype.toAlternatingCase = function () {
+   return this.split('').map((v) => v === v.toUpperCase() ? v.toLowerCase() : v.toUpperCase()).join('')
 }

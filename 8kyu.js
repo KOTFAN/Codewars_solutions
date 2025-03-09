@@ -1200,9 +1200,15 @@ function testEven(n) {
    return !(n % 2)
 }
 
-
+//Cat years, Dog years
 const humanYearsCatYearsDogYears = function (humanYears) {
-
-
    return [humanYears, humanYears >= 2 ? 15 + 9 + 4 * (humanYears - 2) : 15, humanYears >= 2 ? 15 + 9 + 5 * (humanYears - 2) : 15];
+}
+
+
+//Is it a palindrome?
+function isPalindrome(x) {
+   x = x.toLowerCase();
+   for (let i = 0; i < Math.floor(x.length / 2); i++) { if (x[i] !== x[x.length - 1 - i]) return false; }
+   return true;
 }

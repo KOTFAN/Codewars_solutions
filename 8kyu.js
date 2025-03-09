@@ -1181,3 +1181,16 @@ function switchItUp(number) {
    return name;
 
 }
+
+
+//Correct the mistakes of the character recognition software
+function correct(string) {
+   let dic = {
+      0: 'O',
+      1: 'I',
+      5: 'S'
+   }
+
+   return string.replace(/[150]/g, l => dic[l]);
+
+}

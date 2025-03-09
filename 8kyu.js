@@ -1212,3 +1212,13 @@ function isPalindrome(x) {
    for (let i = 0; i < Math.floor(x.length / 2); i++) { if (x[i] !== x[x.length - 1 - i]) return false; }
    return true;
 }
+
+//Powers of 2
+
+function powersOfTwo(n) {
+   let res = [];
+   for (let i = 0; i <= n; i++) {
+      res.push(2 ** i)
+   }
+   return res
+}

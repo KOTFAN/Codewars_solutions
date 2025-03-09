@@ -1226,3 +1226,10 @@ function powersOfTwo(n) {
 String.prototype.toAlternatingCase = function () {
    return this.split('').map((v) => v === v.toUpperCase() ? v.toLowerCase() : v.toUpperCase()).join('')
 }
+//What is between?
+function between(a, b) {
+   const res = [];
+   for (let i = a; i <= b; i++) {
+      res.push(i)
+   } return res;
+}

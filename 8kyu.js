@@ -1321,3 +1321,6 @@ function sayHello(name) {
 function findDifference(a, b) {
    return Math.abs(a.reduce((c, v) => c * v, 1) - b.reduce((c, v) => c * v, 1))
 }
+
+//Grasshopper - Terminal game move function
+const move = (p, r) => p + 2 * r

@@ -1329,3 +1329,10 @@ const move = (p, r) => p + 2 * r
 function twoSort(s) {
    return s.sort()[0].split('').join('***')
 }
+
+//Training JS #7: if..else and ternary operator
+function saleHotdogs(n) {
+   if (n < 5) return n * 100
+   if (n < 10) return n * 95
+   return n * 90
+}

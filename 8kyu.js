@@ -1238,3 +1238,14 @@ function between(a, b) {
 function oddCount(n) {
    return Math.floor(n / 2)
 }
+
+//Sum The Strings
+function sumStr(a, b) {
+   return `${Number(a) + Number(b)}`
+}
+
+//Find numbers which are divisible by given number
+function divisibleBy(numbers, divisor) {
+   return numbers.filter((n) => !(n % divisor))
+}
+

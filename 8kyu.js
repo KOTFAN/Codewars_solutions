@@ -1316,3 +1316,8 @@ function finalGrade(exam, projects) {
 function sayHello(name) {
    return 'Hello, ' + name
 }
+
+//Difference of Volumes of Cuboids
+function findDifference(a, b) {
+   return Math.abs(a.reduce((c, v) => c * v, 1) - b.reduce((c, v) => c * v, 1))
+}

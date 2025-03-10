@@ -1336,3 +1336,7 @@ function saleHotdogs(n) {
    if (n < 10) return n * 95
    return n * 90
 }
+//Is the string uppercase?
+String.prototype.isUpperCase = function () {
+   return this.toUpperCase() === String(this)
+}

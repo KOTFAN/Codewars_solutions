@@ -1311,3 +1311,8 @@ function finalGrade(exam, projects) {
    console.log(exam, projects)
    return 0
 }
+
+//Grasshopper - Debug sayHello
+function sayHello(name) {
+   return 'Hello, ' + name
+}

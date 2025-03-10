@@ -39,6 +39,20 @@ function likes(names) {
 
    }
    return `${names[0]}, ${names[1]} and ${nLen - 2} others like this`
+}
 
-
+//Find the odd int
+function findOdd(A) {
+   let res = A[0]
+   for (let i = 0; i < A.length; i++) {
+      res = A[i];
+      let counter = 0;
+      for (let j = 0; j < A.length; j++) {
+         if (res === A[j]) {
+            counter++
+         }
+      }
+      if (counter % 2 === 1) return res
+   }
+   return res;
 }

@@ -1324,3 +1324,8 @@ function findDifference(a, b) {
 
 //Grasshopper - Terminal game move function
 const move = (p, r) => p + 2 * r
+
+//Sort and Star
+function twoSort(s) {
+   return s.sort()[0].split('').join('***')
+}

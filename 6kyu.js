@@ -67,4 +67,11 @@ function arrayDiff(a, b) {
 }
 
 
-
+//Sum of Digits / Digital Root
+function digitalRoot(n) {
+   let res = n.toString()
+   while (res.length > 1) {
+      res = res.split('').reduce((a, v) => a + Number(v), 0).toString()
+   }
+   return Number(res)
+}

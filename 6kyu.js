@@ -81,3 +81,15 @@ function createPhoneNumber(numbers) {
    let i = 0
    return '(xxx) xxx-xxxx'.replace(/x/g, () => numbers[i++])
 }
+
+//Bit Counting
+const countBits = function (n) {
+   let arr = []
+   let res = n
+   while (res !== 0) {
+      arr.push(res % 2)
+      res = Math.floor(res / 2)
+   }
+   return arr.reduce((c, v) => c + v, 0)
+
+};

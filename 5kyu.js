@@ -12,3 +12,7 @@ function moveZeros(arr) {
    }
    return normal.concat(zeros)
 }
+//Simple Pig Latin
+function pigIt(str) {
+   return str.split(' ').map((v) => v[0].charCodeAt() > 64 ? v.slice(1) + v[0] + 'ay' : v).join(' ')
+}

@@ -93,3 +93,17 @@ const countBits = function (n) {
    return arr.reduce((c, v) => c + v, 0)
 
 };
+
+//Find The Parity Outlier
+function findOutlier(integers) {
+   let evenC = 0;
+   let oddC = 0;
+   integers.forEach((v) => v % 2 ? oddC++ : evenC++)
+   let find = evenC > oddC ? 1 : 0;
+   console.log(find, integers)
+   for (let i = 0; i < integers.length; i++) {
+      if (integers[i] % 2 === find || integers[i] % 2 === -find) {
+         return integers[i]
+      }
+   }
+}

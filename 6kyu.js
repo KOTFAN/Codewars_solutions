@@ -56,3 +56,15 @@ function findOdd(A) {
    }
    return res;
 }
+
+
+//Array.diff
+function arrayDiff(a, b) {
+   const removers = new Set(b)
+
+   return a.filter((e) => !removers.has(e))
+
+}
+
+
+

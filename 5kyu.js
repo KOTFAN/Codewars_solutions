@@ -27,3 +27,20 @@ function humanReadable(seconds) {
    return `${Math.floor(hours) > 9 ? Math.floor(hours) : '0' + Math.floor(hours)}:${Math.floor(minutes) > 9 ? Math.floor(minutes) : '0' + Math.floor(minutes)}:${Math.round(sec) > 9 ? Math.round(sec) : '0' + Math.round(sec)}`;
 
 }
+
+
+//RGB To Hex Conversion
+function rgb(r, g, b) {
+
+   return toHex(r) + toHex(g) + toHex(b)
+}
+
+const toHex = (n) => {
+   if (n <= 0) return '00'
+
+   if (n > 255) return 'FF'
+
+   const Hex = n.toString(16).toUpperCase()
+
+   return Hex.length > 1 ? Hex : '0' + Hex
+}

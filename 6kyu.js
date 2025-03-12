@@ -75,3 +75,9 @@ function digitalRoot(n) {
    }
    return Number(res)
 }
+
+//Create Phone Number
+function createPhoneNumber(numbers) {
+   let i = 0
+   return '(xxx) xxx-xxxx'.replace(/x/g, () => numbers[i++])
+}

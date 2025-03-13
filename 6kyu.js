@@ -107,3 +107,13 @@ function findOutlier(integers) {
       }
    }
 }
+
+
+//Counting Duplicates
+function duplicateCount(text) {
+   text = text.toLowerCase()
+   const onlyOnes = new Set()
+   const dublicates = new Set()
+   text.split('').forEach((l) => onlyOnes.has(l) ? dublicates.add(l) : onlyOnes.add(l))
+   return dublicates.size
+}

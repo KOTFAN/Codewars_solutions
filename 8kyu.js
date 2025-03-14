@@ -1398,3 +1398,8 @@ function gooseFilter(birds) {
    return birds.filter((b) => !geese.includes(b))
 
 };
+
+//My head is at the wrong end!
+function fixTheMeerkat(arr) {
+   return arr.reverse();
+}

@@ -1415,3 +1415,9 @@ function solution(a, b) {
    const long = short === a ? b : a
    return short + long + short
 }
+
+//Super Duper Easy
+function problem(x) {
+   if (typeof x === 'number') return 50 * x + 6
+   return "Error"
+}

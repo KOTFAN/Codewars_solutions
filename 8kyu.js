@@ -1426,3 +1426,9 @@ function problem(x) {
 function unusualFive() {
    return Math.round(Math.sqrt(Math.exp(Math.PI)));
 }
+
+//Well of Ideas - Easy Version
+function well(x) {
+   const GoodIdeasCount = x.filter(x => x === 'good').length
+   return GoodIdeasCount > 2 ? 'I smell a series!' : GoodIdeasCount === 0 ? 'Fail!' : 'Publish!'
+}

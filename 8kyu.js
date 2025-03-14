@@ -1492,3 +1492,7 @@ function xor(a, b) {
 function getChar(c) {
    return String.fromCharCode(c)
 }
+//Find the position!
+function position(l) {
+   return 'Position of alphabet: ' + (l.charCodeAt() - 96)
+}

@@ -1468,3 +1468,7 @@ function getRealFloor(n) {
 function combat(health, damage) {
    return health - damage > 0 ? health - damage : 0
 }
+//Get Nth Even Number
+function nthEven(n) {
+   return n * 2 - 2
+}

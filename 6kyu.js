@@ -176,3 +176,10 @@ function toCamelCase(str) {
    }
    return words.join('')
 }
+
+//Does my number look big in this?
+function narcissistic(value) {
+   const numLen = value.toString().length
+
+   return value === value.toString().split('').reduce((a, v) => a + Number(v) ** numLen, 0)
+}

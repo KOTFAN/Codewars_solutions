@@ -1463,3 +1463,8 @@ function nameShuffler(str) {
 function getRealFloor(n) {
    return n > 0 ? n > 13 ? n - 2 : n - 1 : n
 }
+
+//Grasshopper - Terminal game combat function
+function combat(health, damage) {
+   return health - damage > 0 ? health - damage : 0
+}

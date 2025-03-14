@@ -142,3 +142,8 @@ function isValidWalk(walk) {
    return !(cords[0] || cords[1])
 }
 
+
+//Replace With Alphabet Position
+function alphabetPosition(text) {
+   return text.toUpperCase().split('').map((s) => (s.charCodeAt() > 64 && s.charCodeAt() < 91 ? s.charCodeAt() - 64 : 0)).filter((v) => v > 0).join(' ');
+}

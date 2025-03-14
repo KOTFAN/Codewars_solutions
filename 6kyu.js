@@ -129,4 +129,16 @@ function duplicateEncode(word) {
 }
 
 
+//Take a Ten Minutes Walk
+function isValidWalk(walk) {
+   if (walk.length !== 10) return false
+   let cords = [0, 0]
+   for (let i = 0; i < 10; i++) {
+      if (walk[i] === 'n') cords[0]++
+      if (walk[i] === 's') cords[0]--
+      if (walk[i] === 'e') cords[1]++
+      if (walk[i] === 'w') cords[1]--
+   }
+   return !(cords[0] || cords[1])
+}
 

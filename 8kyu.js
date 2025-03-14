@@ -1408,3 +1408,10 @@ function fixTheMeerkat(arr) {
 function reverseList(list) {
    return list.reverse()
 }
+
+//Short Long Short
+function solution(a, b) {
+   const short = a.length < b.length ? a : b
+   const long = short === a ? b : a
+   return short + long + short
+}

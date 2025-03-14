@@ -147,3 +147,20 @@ function isValidWalk(walk) {
 function alphabetPosition(text) {
    return text.toUpperCase().split('').map((s) => (s.charCodeAt() > 64 && s.charCodeAt() < 91 ? s.charCodeAt() - 64 : 0)).filter((v) => v > 0).join(' ');
 }
+
+
+//Persistent Bugger
+const multNumWhileNotOneDigit = function (n, multCouter = 0) {
+   if (n > 9) {
+      n = `${n}`.split('').reduce((a, v) => a * Number(v), 1)
+      return multNumWhileNotOneDigit(Number(n), ++multCouter)
+   } else {
+
+      return multCouter;
+   }
+
+};
+
+function persistence(num) {
+   return multNumWhileNotOneDigit(num)
+}

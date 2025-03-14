@@ -1370,3 +1370,14 @@ function stringy(size) {
 function expressionMatter(a, b, c) {
    return Math.max(a + b + c, (a + b) * c, a * (b + c), a * b + c, a + b * c, a * b * c)
 }
+
+//Find Multiples of a Number
+function findMultiples(integer, limit) {
+   const res = [];
+   for (let i = integer; i <= limit; i++) {
+      if (i % integer === 0) {
+         res.push(i)
+      }
+   }
+   return res;
+}

@@ -164,3 +164,15 @@ const multNumWhileNotOneDigit = function (n, multCouter = 0) {
 function persistence(num) {
    return multNumWhileNotOneDigit(num)
 }
+
+
+//Convert string to camel case
+function toCamelCase(str) {
+
+   let words = str.replace(/[_-]+/g, " ").split(' ');
+
+   for (let i = 1; i < words.length; i++) {
+      words[i] = words[i][0].toUpperCase() + words[i].slice(1)
+   }
+   return words.join('')
+}

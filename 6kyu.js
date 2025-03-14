@@ -215,3 +215,23 @@ function tribonacci(signature, n) {
    }
    return res
 }
+
+
+//Fibonacci, Tribonacci and friends
+function Xbonacci(signature, n) {
+   const res = []
+   const len = signature.length
+   for (let i = 0; i < n; i++) {
+      if (i < signature.length) {
+         res.push(signature[i])
+      } else {
+         let sum = 0;
+         for (let j = 0; j < len; j++) {
+            sum += res[j + i - len]
+         }
+         res.push(sum)
+      }
+
+   }
+   return res
+}

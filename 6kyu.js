@@ -117,3 +117,16 @@ function duplicateCount(text) {
    text.split('').forEach((l) => onlyOnes.has(l) ? dublicates.add(l) : onlyOnes.add(l))
    return dublicates.size
 }
+
+//Duplicate Encoder
+function duplicateEncode(word) {
+   word = word.toLowerCase()
+   const onlyOnes = new Set()
+   const dublicates = new Set()
+   word.split('').forEach((l) => onlyOnes.has(l) ? dublicates.add(l) : onlyOnes.add(l))
+
+   return word.split('').map((v) => dublicates.has(v) ? ')' : '(').join('');
+}
+
+
+

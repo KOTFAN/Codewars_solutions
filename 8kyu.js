@@ -1432,3 +1432,14 @@ function well(x) {
    const GoodIdeasCount = x.filter(x => x === 'good').length
    return GoodIdeasCount > 2 ? 'I smell a series!' : GoodIdeasCount === 0 ? 'Fail!' : 'Publish!'
 }
+
+
+//Lario and Muigi Pipe Problem
+function pipeFix(numbers) {
+   const res = []
+   for (let i = numbers[0]; i <= numbers[numbers.length - 1]; i++) {
+
+      res.push(i)
+   }
+   return res
+}

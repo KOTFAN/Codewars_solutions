@@ -1421,3 +1421,8 @@ function problem(x) {
    if (typeof x === 'number') return 50 * x + 6
    return "Error"
 }
+
+//5 without numbers !!
+function unusualFive() {
+   return Math.round(Math.sqrt(Math.exp(Math.PI)));
+}

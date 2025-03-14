@@ -1443,3 +1443,10 @@ function pipeFix(numbers) {
    }
    return res
 }
+
+
+//Training JS #1: create your first JS function and print "Hello World!"
+const helloWorld = () => {
+   const str = 'Hello World!'
+   console.log(str)
+}

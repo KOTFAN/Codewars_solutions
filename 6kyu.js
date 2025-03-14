@@ -183,3 +183,19 @@ function narcissistic(value) {
 
    return value === value.toString().split('').reduce((a, v) => a + Number(v) ** numLen, 0)
 }
+
+
+//Your order, please
+function order(words) {
+   let wordsArr = words.split(' ')
+   let res = []
+   for (let i = 1; i <= wordsArr.length; i++) {
+      for (let j = 0; j < wordsArr.length; j++) {
+         if (wordsArr[j].includes(i)) {
+            res.push(wordsArr[j])
+         }
+      }
+
+   }
+   return res.join(' ')
+}

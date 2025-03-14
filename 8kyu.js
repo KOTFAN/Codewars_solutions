@@ -1403,3 +1403,8 @@ function gooseFilter(birds) {
 function fixTheMeerkat(arr) {
    return arr.reverse();
 }
+
+//Reverse List Order
+function reverseList(list) {
+   return list.reverse()
+}

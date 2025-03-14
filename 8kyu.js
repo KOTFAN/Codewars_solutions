@@ -1450,3 +1450,5 @@ const helloWorld = () => {
    const str = 'Hello World!'
    console.log(str)
 }
+//Basic variable assignment
+const name = "codewa.rs";

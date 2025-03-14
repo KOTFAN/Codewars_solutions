@@ -1344,3 +1344,8 @@ String.prototype.isUpperCase = function () {
 
 //Function 2 - squaring an argument
 const square = (a) => a ** 2
+
+//To square(root) or not to square(root)
+function squareOrSquareRoot(array) {
+   return array.map(v => v ** (1 / 2) % 1 ? v * v : v ** (1 / 2));
+}

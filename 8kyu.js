@@ -1342,4 +1342,5 @@ String.prototype.isUpperCase = function () {
 }
 
 
-
+//Function 2 - squaring an argument
+const square = (a) => a ** 2

@@ -1496,12 +1496,3 @@ function getChar(c) {
 function position(l) {
    return 'Position of alphabet: ' + (l.charCodeAt() - 96)
 }
-
-
-function revesser(arr) {
-   return arr.reverse()
-}
-
-
-const abc = 123;
-let f = 'hello'.length * 5

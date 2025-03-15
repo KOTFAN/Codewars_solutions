@@ -1501,7 +1501,3 @@ function position(l) {
 function revesser(arr) {
    return arr.reverse()
 }
-
-
-const abc = 123;
-let f = 'hello'.length * 5

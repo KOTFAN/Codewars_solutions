@@ -1496,3 +1496,6 @@ function getChar(c) {
 function position(l) {
    return 'Position of alphabet: ' + (l.charCodeAt() - 96)
 }
+
+
+//made commit with wrong name

@@ -260,3 +260,8 @@ function newAvg(arr, newavg) {
    }
 
 }
+
+//N-Dimensional Vector Magnitude
+function magnitude(vector) {
+   return vector.reduce((a, v) => a + v * v, 0) ** (1 / 2)
+}

@@ -248,3 +248,15 @@ function nsd(num1, num2) {
    }
    return nsd(num2, num1 % num2)
 }
+
+//Looking for a benefactor
+function newAvg(arr, newavg) {
+   const donation = Math.ceil(newavg * (arr.length + 1) - arr.reduce((a, v) => a + v, 0))
+
+
+   if (donation > 0) { return donation }
+   else {
+      throw new Error("Expected New Average is too low");
+   }
+
+}

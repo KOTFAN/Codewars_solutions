@@ -265,3 +265,25 @@ function newAvg(arr, newavg) {
 function magnitude(vector) {
    return vector.reduce((a, v) => a + v * v, 0) ** (1 / 2)
 }
+
+//Lorraine Wants to Win the TV Contest
+function unscramble(scramble) {
+   const arrWithSortedLetters = []
+   const scrambleSorted = scramble.split('').sort().join('')
+   for (let i = 0; i < wordList.length; i++) {
+      arrWithSortedLetters.push(wordList[i].split('').sort().join(''))
+   }
+
+   const filteredArr = arrWithSortedLetters.filter((w) => w === scrambleSorted)
+   const indices = [];
+   let idx = arrWithSortedLetters.indexOf(scrambleSorted);
+   while (idx !== -1) {
+      indices.push(idx);
+      idx = arrWithSortedLetters.indexOf(scrambleSorted, idx + 1);
+   }
+   const res = []
+   for (let i = 0; i < indices.length; i++) {
+      res.push(wordList[indices[i]])
+   }
+   return res;
+}

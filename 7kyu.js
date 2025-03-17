@@ -234,3 +234,17 @@ function findNextSquare(sq) {
 function printerError(s) {
    return `${s.split('').reduce((c, v) => v.charCodeAt() < 110 ? c + 0 : c + 1, 0)}/${s.length}`
 }
+
+
+//Reduce My Fraction
+function reduce(fraction) {
+   const devider = nsd(fraction[0], fraction[1])
+   return [fraction[0] / devider, fraction[1] / devider]
+}
+
+function nsd(num1, num2) {
+   if (num2 === 0) {
+      return num1
+   }
+   return nsd(num2, num1 % num2)
+}

@@ -1591,3 +1591,8 @@ function capitalizeWord(word) {
 
 //Is this my tail
 const correctTail = (body, tail) => body[body.length - 1] === tail
+
+//FIXME: Replace all dots
+var replaceDots = function (str) {
+   return str.replace(/\./g, '-');
+}

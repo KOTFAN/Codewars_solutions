@@ -1703,3 +1703,13 @@ Counter.prototype.getValue = function () {
 Counter.prototype.reset = function () {
    this.value = 0;
 };
+
+//Max Headroom and JavaScript style
+function getMax1() {
+   let max = { name: 'Max Headroom' }
+   return max;
+}
+
+function getMax2() {
+   return { name: 'Max Headroom' }
+}

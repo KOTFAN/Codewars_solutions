@@ -1583,3 +1583,8 @@ function HQ9(code) {
 function remove(string) {
    return string[string.length - 1] === '!' ? string.slice(0, string.length - 1) : string;
 }
+
+//Capitalization and Mutability
+function capitalizeWord(word) {
+   return word[0].toUpperCase() + word.slice(1, word.length);
+}

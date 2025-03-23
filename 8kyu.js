@@ -1666,3 +1666,8 @@ function evalObject(value) {
 //Push a hash/an object into array
 items = []
 items.push({ a: "b", c: "d" })
+
+//Semi-Optional
+function wrap(value) {
+   return { value: value };
+}

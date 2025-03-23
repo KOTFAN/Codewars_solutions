@@ -1536,3 +1536,8 @@ function drawStairs(n) {
 var templateStrings = function (noun, adjective) {
    return `${noun} are ${adjective}`
 }
+
+//USD => CNY
+function usdcny(usd) {
+   return `${(usd * 6.75).toFixed(2)} Chinese Yuan`
+}

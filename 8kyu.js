@@ -1500,3 +1500,24 @@ function position(l) {
 function commitLover() {
    return "Ilove commit"
 }
+
+//simple calculator
+function calculator(a, b, sign) {
+   let res;
+   switch (sign) {
+      case "+":
+         res = a + b
+         break;
+      case "-":
+         res = a - b
+         break;
+      case "*":
+         res = a * b;
+         break;
+      case "/":
+         res = a / b
+         break;
+   }
+
+   return typeof res === 'number' && !isNaN(res) ? res : "unknown value"
+}

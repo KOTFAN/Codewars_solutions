@@ -1632,3 +1632,9 @@ function swapValues(arr) {
 
 //Incorrect division method
 const solve = (x, y) => x / y
+
+//Return to Sanity
+function mystery() {
+   const results = { sanity: 'Hello' };
+   return results;
+}

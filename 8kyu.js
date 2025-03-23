@@ -1541,3 +1541,8 @@ var templateStrings = function (noun, adjective) {
 function usdcny(usd) {
    return `${(usd * 6.75).toFixed(2)} Chinese Yuan`
 }
+
+//BASIC: Making Six Toast
+function sixToast(num) {
+   return Math.abs(num - 6)
+}

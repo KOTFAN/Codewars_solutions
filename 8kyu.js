@@ -1521,6 +1521,8 @@ function calculator(a, b, sign) {
 
    return typeof res === 'number' && !isNaN(res) ? res : "unknown value"
 }
+
+
 //Draw stairs
 function drawStairs(n) {
    let res = ''
@@ -1529,4 +1531,8 @@ function drawStairs(n) {
    }
 
    return res + 'I';
+}
+//Template Strings
+var templateStrings = function (noun, adjective) {
+   return `${noun} are ${adjective}`
 }

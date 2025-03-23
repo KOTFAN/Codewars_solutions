@@ -1713,3 +1713,21 @@ function getMax1() {
 function getMax2() {
    return { name: 'Max Headroom' }
 }
+
+
+//Shifty Closures
+const greetAbe = () => 'Hello, Abe!'
+const greetBen = () => 'Hello, Ben!'
+
+//Hello Happy Codevarrior!
+function Warrior(n) {
+   let name = n;
+   this.name = function (n) {
+      if (n) name = n;
+      return name;
+   }
+}
+
+Warrior.prototype.toString = function () {
+   return "Hi! my name's " + this.name();
+}

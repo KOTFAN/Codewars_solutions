@@ -1629,3 +1629,6 @@ function rainAmount(mm) {
 function swapValues(arr) {
    return arr.reverse()
 }
+
+//Incorrect division method
+const solve = (x, y) => x / y

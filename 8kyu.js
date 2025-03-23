@@ -1588,3 +1588,6 @@ function remove(string) {
 function capitalizeWord(word) {
    return word[0].toUpperCase() + word.slice(1, word.length);
 }
+
+//Is this my tail
+const correctTail = (body, tail) => body[body.length - 1] === tail

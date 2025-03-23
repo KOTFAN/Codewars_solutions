@@ -1521,3 +1521,12 @@ function calculator(a, b, sign) {
 
    return typeof res === 'number' && !isNaN(res) ? res : "unknown value"
 }
+//Draw stairs
+function drawStairs(n) {
+   let res = ''
+   for (let i = 1; i < n; i++) {
+      res += 'I\n' + ' '.repeat(i)
+   }
+
+   return res + 'I';
+}

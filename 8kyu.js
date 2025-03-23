@@ -1671,3 +1671,35 @@ items.push({ a: "b", c: "d" })
 function wrap(value) {
    return { value: value };
 }
+
+//A bugs trilogy: Episode 1 - "Let Math.Random(); decide your future"
+function yourFutureCareer() {
+   let career = Math.random()
+   if (career <= 0.32) {
+      return 'FrontEnd Developer'
+   } else if (career <= 0.65) {
+      return 'BackEnd Developer'
+   } else {
+      return 'Full-Stack Developer'
+   }
+}
+
+
+yourFutureCareer();
+
+//Broken Counter
+function Counter() {
+   this.value = 0;
+}
+
+Counter.prototype.increase = function () {
+   this.value++;
+};
+
+Counter.prototype.getValue = function () {
+   return this.value;
+};
+
+Counter.prototype.reset = function () {
+   this.value = 0;
+};

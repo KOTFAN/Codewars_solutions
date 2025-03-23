@@ -1558,3 +1558,9 @@ function stringClean(s) {
    }
    return res;
 }
+
+
+//Add Length
+function addLength(str) {
+   return str.split(' ').map((w) => `${w} ${w.length}`)
+}

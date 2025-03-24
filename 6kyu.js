@@ -248,3 +248,13 @@ var uniqueInOrder = function (iterable) {
    }
    return res
 }
+
+//Detect Pangram
+function isPangram(string) {
+   let isHasAllAlphabetLetters = true
+   const alphabet = new Set()
+   for (let i = 97; i < 123; i++) alphabet.add(String.fromCharCode(i))
+   let strChars = new Set(string.toLowerCase())
+   alphabet.forEach((l) => strChars.has(l) ? l : isHasAllAlphabetLetters = false)
+   return isHasAllAlphabetLetters
+}

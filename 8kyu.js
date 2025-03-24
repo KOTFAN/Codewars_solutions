@@ -1751,3 +1751,12 @@ function mergeArrays(arr1, arr2) {
 
 //Plural
 const plural = n => n !== 1
+
+//Triple Trouble
+function tripleTrouble(one, two, three) {
+   const res = []
+   for (let i = 0; i < one.length; i++) {
+      res.push(one[i] + two[i] + three[i])
+   }
+   return res.join('')
+}

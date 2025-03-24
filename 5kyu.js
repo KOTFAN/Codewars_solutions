@@ -66,3 +66,23 @@ function generateHashtag(str) {
    return '#' + UpCaseFirstLettr.join('')
 
 }
+
+
+function rot13(message) {
+   const originalMessage = message;
+   const res = [...message.toLowerCase()];
+   const alphabet = 'abcdefghijklmnopqrstuvwxyz';
+   for (let i = 0; i < message.length; i++) {
+      if (alphabet.includes(res[i])) {
+         //Letter is Upper Case
+         if (originalMessage[i] === res[i].toUpperCase()) {
+            res[i] = alphabet[(alphabet.indexOf(res[i]) + 13) % 26].toUpperCase()
+         } else {
+            res[i] = alphabet[(alphabet.indexOf(res[i]) + 13) % 26]
+         }
+
+      }
+   }
+
+   return res.join('')
+}

@@ -258,3 +258,17 @@ function isPangram(string) {
    alphabet.forEach((l) => strChars.has(l) ? l : isHasAllAlphabetLetters = false)
    return isHasAllAlphabetLetters
 }
+
+//Playing with digits
+function digPow(n, p) {
+   let k = -1
+   const arrOfDigits = String(n).split('').map(n => +n)
+   let sumByPowerStartsFromP = 0;
+   for (let i = 0; i < arrOfDigits.length; i++) {
+      sumByPowerStartsFromP += arrOfDigits[i] ** (p + i)
+   }
+
+   k = (sumByPowerStartsFromP / n) % 1 === 0 ? sumByPowerStartsFromP / n : -1
+
+   return k
+}

@@ -235,3 +235,16 @@ function Xbonacci(signature, n) {
    }
    return res
 }
+
+
+//Unique In Order
+var uniqueInOrder = function (iterable) {
+   const res = []
+   for (let i = 0; i < iterable.length; i++) {
+      let temp = iterable[i]
+      if (temp !== iterable[i + 1]) {
+         res.push(temp)
+      }
+   }
+   return res
+}

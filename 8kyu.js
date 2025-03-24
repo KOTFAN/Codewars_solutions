@@ -1740,3 +1740,6 @@ function validate(username, password) {
    }
    return database.login(username, password);
 }
+
+//Reversing Words in a String
+const reverse = (str) => str.split(' ').reverse().join(' ')

@@ -1743,3 +1743,8 @@ function validate(username, password) {
 
 //Reversing Words in a String
 const reverse = (str) => str.split(' ').reverse().join(' ')
+
+//Merge two sorted arrays into one
+function mergeArrays(arr1, arr2) {
+   return Array.from(new Set(arr1.concat(arr2).sort((a, b) => a - b)))
+}

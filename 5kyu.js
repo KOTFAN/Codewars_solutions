@@ -44,3 +44,25 @@ const toHex = (n) => {
 
    return Hex.length > 1 ? Hex : '0' + Hex
 }
+
+
+//The Hashtag Generator
+function generateHashtag(str) {
+   let epmtyStr = ' ';
+   let res = []
+   for (let i = 0; i < str.length; i++) {
+      if (str[i] !== ' ') {
+         res.push(str[i])
+         if (str[i + 1] === ' ') res.push(' ');
+      }
+   }
+   if (res[res.length - 1] === ' ') res.pop();
+   res = res.join('').split(' ')
+
+
+   if (res.join('').length > 139 || res[0] === '') return false
+
+   const UpCaseFirstLettr = res.map((w) => w[0].toUpperCase() + w.slice(1))
+   return '#' + UpCaseFirstLettr.join('')
+
+}

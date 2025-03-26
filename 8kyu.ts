@@ -38,3 +38,8 @@ export function seatsInTheater(nCols: number, nRows: number, col: number, row: n
 export function dutyFree(normPrice: number, discount: number, hol: number): number {
    return Math.floor(hol / (normPrice * discount * 0.01))
 }
+
+//Find out whether the shape is a cube
+export function cubeChecker(volume: number, side: number): boolean {
+   return (volume === side ** 3 && !!side);
+}

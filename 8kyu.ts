@@ -23,3 +23,8 @@ export function hexToDec(hexString: string): number {
 export const sayHello = (names: string[], city: string, state: string): string => {
    return `Hello, ${names.join(' ')}! Welcome to ${city}, ${state}!`;
 }
+
+//Multiple of index
+export function multipleOfIndex(array: number[]): number[] {
+   return array.filter((e, i) => e % i === 0 || (e === 0 && i === 0))//e===i
+}

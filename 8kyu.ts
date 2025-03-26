@@ -28,3 +28,8 @@ export const sayHello = (names: string[], city: string, state: string): string =
 export function multipleOfIndex(array: number[]): number[] {
    return array.filter((e, i) => e % i === 0 || (e === 0 && i === 0))//e===i
 }
+
+//Simple Fun #1: Seats in Theater
+export function seatsInTheater(nCols: number, nRows: number, col: number, row: number) {
+   return (nCols - col + 1) * (nRows - row)
+}

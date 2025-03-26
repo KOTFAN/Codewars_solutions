@@ -43,3 +43,16 @@ export function dutyFree(normPrice: number, discount: number, hol: number): numb
 export function cubeChecker(volume: number, side: number): boolean {
    return (volume === side ** 3 && !!side);
 }
+
+//L1: Bartender, drinks!
+export function getDrinkByProfession(profession: string): string {
+   let AlcoDict = {
+      "jabroni": "Patron Tequila",
+      "school counselor": "Anything with Alcohol",
+      "programmer": "Hipster Craft Beer",
+      "bike gang member": "Moonshine",
+      "politician": "Your tax dollars",
+      "rapper": "Cristal",
+   }
+   return AlcoDict[profession.toLowerCase() as keyof typeof AlcoDict] || "Beer"
+}

@@ -19,3 +19,7 @@ export function hexToDec(hexString: string): number {
    return parseInt(hexString, 16);
 }
 
+//Welcome to the City
+export const sayHello = (names: string[], city: string, state: string): string => {
+   return `Hello, ${names.join(' ')}! Welcome to ${city}, ${state}!`;
+}

@@ -13,3 +13,9 @@ export function main(verb: string, noun: string): string {
 export function hello(name: string = ''): string {
    return name ? `Hello, ${name[0].toUpperCase() + name.slice(1).toLowerCase()}!` : 'Hello, World!';
 }
+
+//Hex to Decimal
+export function hexToDec(hexString: string): number {
+   return parseInt(hexString, 16);
+}
+

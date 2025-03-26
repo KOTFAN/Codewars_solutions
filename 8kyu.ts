@@ -33,3 +33,8 @@ export function multipleOfIndex(array: number[]): number[] {
 export function seatsInTheater(nCols: number, nRows: number, col: number, row: number) {
    return (nCols - col + 1) * (nRows - row)
 }
+
+//Holiday VIII - Duty Free
+export function dutyFree(normPrice: number, discount: number, hol: number): number {
+   return Math.floor(hol / (normPrice * discount * 0.01))
+}

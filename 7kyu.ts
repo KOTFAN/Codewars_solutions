@@ -42,3 +42,21 @@ export function driver(data: Array<string>): string {
 
    return first + second + third + fourth + fifth + sixth + seventh + eighth
 }
+
+
+//FIXME: Get Full Name
+export class Dinglemouse {
+
+   constructor(private firstName: string, private lastName: string) {
+   }
+
+   getFullName(): string {
+      if (!this.firstName && !this.lastName) return ''
+      if (!this.firstName) return this.lastName
+      if (!this.lastName) return this.firstName
+      return `${this.firstName} ${this.lastName}`
+   }
+
+}
+
+

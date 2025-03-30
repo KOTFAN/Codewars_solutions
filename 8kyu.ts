@@ -56,3 +56,8 @@ export function getDrinkByProfession(profession: string): string {
    }
    return AlcoDict[profession.toLowerCase() as keyof typeof AlcoDict] || "Beer"
 }
+
+//Count the number of cubes with paint on
+export function countSquares(cuts: number): number {
+   return cuts === 0 ? 1 : (cuts + 1) ** 3 - (cuts - 1) ** 3
+}

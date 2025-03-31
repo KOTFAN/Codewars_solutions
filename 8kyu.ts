@@ -61,3 +61,30 @@ export function getDrinkByProfession(profession: string): string {
 export function countSquares(cuts: number): number {
    return cuts === 0 ? 1 : (cuts + 1) ** 3 - (cuts - 1) ** 3
 }
+
+
+//Learning TypeScript. Basic Types. Type Assertions
+export class SuccessServerResult {
+   constructor(public httpCode: number, public resultObject: Object) { }
+}
+
+export class ErrorServerResult {
+   constructor(public httpCode: number, public message: string) { }
+}
+
+export function getResult(result: SuccessServerResult | ErrorServerResult): Object | string {
+   if (result?.httpCode === 200) {
+      result = result as SuccessServerResult
+
+      // Returning resultObject if everything is OK
+      return result.resultObject;
+   } else {
+
+      result = result as ErrorServerResult
+
+      // Returning result.message in case of error
+      // FIXME: help TypeScript Compiler to understand that result here 
+      // is the instance of ErrorServerResult...
+      return result?.message;
+   }
+}

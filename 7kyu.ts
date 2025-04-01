@@ -73,3 +73,7 @@ export class Warrior {
    }
 }
 
+//Truthy and Falsy
+export const truthy: any[] = [true, 1, ' ', Infinity, [], {}];
+export const falsy: any[] = [0, false, '', NaN, null, undefined];
+

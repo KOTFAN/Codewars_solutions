@@ -16,3 +16,5 @@ SELECT * FROM users WHERE age>17
 SELECT * FROM companies ORDER BY employees DESC
 --Easy SQL: LowerCase
 SELECT id,name,birthday,LOWER(race)as race FROM demographics
+--Collect Tuition (SQL for Beginners #4)
+SELECT * FROM students WHERE NOT tuition_received

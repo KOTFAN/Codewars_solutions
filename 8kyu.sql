@@ -18,3 +18,5 @@ SELECT * FROM companies ORDER BY employees DESC
 SELECT id,name,birthday,LOWER(race)as race FROM demographics
 --Collect Tuition (SQL for Beginners #4)
 SELECT * FROM students WHERE NOT tuition_received
+--On the Canadian Border (SQL for Beginners #2)
+SELECT * FROM travelers WHERE NOT country='USA' AND NOT country='Mexico' AND NOT country='Canada'

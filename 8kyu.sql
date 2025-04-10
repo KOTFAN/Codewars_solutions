@@ -10,3 +10,5 @@ SELECT to_hex(legs) as legs, to_hex(arms) as arms FROM monsters
 SELECT * FROM students WHERE IsActive
 --SQL Basics: Simple WHERE and ORDER BY
 SELECT * FROM people WHERE age>50 ORDER BY age DESC
+--Adults only (SQL for Beginners #1)
+SELECT * FROM users WHERE age>17

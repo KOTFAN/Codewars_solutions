@@ -8,3 +8,5 @@ SELECT FLOOR(number1)as number1,CEIL(number2)as number2 FROM decimals
 SELECT to_hex(legs) as legs, to_hex(arms) as arms FROM monsters
 --1. Find all active students
 SELECT * FROM students WHERE IsActive
+--SQL Basics: Simple WHERE and ORDER BY
+SELECT * FROM people WHERE age>50 ORDER BY age DESC

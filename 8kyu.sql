@@ -14,3 +14,5 @@ SELECT * FROM people WHERE age>50 ORDER BY age DESC
 SELECT * FROM users WHERE age>17
 --Easy SQL - Ordering
 SELECT * FROM companies ORDER BY employees DESC
+--Easy SQL: LowerCase
+SELECT id,name,birthday,LOWER(race)as race FROM demographics

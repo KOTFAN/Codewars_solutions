@@ -12,3 +12,5 @@ SELECT * FROM students WHERE IsActive
 SELECT * FROM people WHERE age>50 ORDER BY age DESC
 --Adults only (SQL for Beginners #1)
 SELECT * FROM users WHERE age>17
+--Easy SQL - Ordering
+SELECT * FROM companies ORDER BY employees DESC

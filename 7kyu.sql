@@ -14,3 +14,5 @@ SELECT POWER(number1,number2) AS result FROM decimals
 --SQL Basics - Position
 SELECT id,name,POSITION(',' IN characteristics) AS comma FROM monsters
 ORDER BY comma ASC
+--SQL Basics: Repeat and Reverse
+SELECT CONCAT(name,name,name) AS name,REVERSE(characteristics) AS characteristics FROM monsters

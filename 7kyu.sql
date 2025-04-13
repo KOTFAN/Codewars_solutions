@@ -19,4 +19,9 @@ SELECT CONCAT(name,name,name) AS name,REVERSE(characteristics) AS characteristic
 --BASICS: Length based SELECT with LIKE
 SELECT first_name, last_name FROM names 
 WHERE first_name LIKE '______%';
-
+--SQL with Harry Potter: Sorting Hat Comparators
+SELECT * FROM students
+WHERE ((quality1='evil' AND quality2='cunning')) 
+OR (quality1='brave' AND quality2<>'evil') 
+OR (quality1='studious' OR quality2='intelligent')
+OR (quality1='hufflepuff' OR quality2='hufflepuff')

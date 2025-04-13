@@ -9,3 +9,5 @@ SELECT capital FROM countries
 WHERE (continent = 'Africa' OR continent = 'Afrika') AND country LIKE 'E%' 
 ORDER BY capital ASC
 LIMIT 3
+--SQL Basics: Raise to the Power
+SELECT POWER(number1,number2) AS result FROM decimals

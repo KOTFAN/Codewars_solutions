@@ -28,3 +28,5 @@ SELECT DISTINCT age FROM people
 INSERT INTO participants(name,age, attending)
 VALUES ('KOTFAN', 21, true);
 SELECT * FROM participants WHERE age>20 AND attending;
+--SQL Basics: Simple SUM
+SELECT SUM(age) as age_sum FROM people

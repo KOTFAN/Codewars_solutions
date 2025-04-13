@@ -31,3 +31,11 @@ SELECT id, LENGTH(name) * 8 as name, birthday, LENGTH(race) * 8 as race FROM dem
 SELECT BIT_LENGTH(name)+LENGTH(race) AS calculation FROM demographics
 --Easy SQL: ASCII Converter
 SELECT id,ASCII(name) as name,birthday,ASCII(race)as race FROM demographics
+--Easy SQL: Moving Values
+SELECT 
+  LENGTH(name) AS id,
+  LENGTH(CAST(legs AS TEXT)) AS name,
+  LENGTH(CAST(arms AS TEXT)) AS legs,
+  LENGTH(characteristics) AS arms,
+  LENGTH(CAST(id AS TEXT)) AS characteristics
+FROM monsters;

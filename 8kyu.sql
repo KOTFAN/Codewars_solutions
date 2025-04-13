@@ -22,3 +22,5 @@ SELECT * FROM students WHERE NOT tuition_received
 SELECT * FROM travelers WHERE NOT country='USA' AND NOT country='Mexico' AND NOT country='Canada'
 --SQL Basics: Simple MIN / MAX
 SELECT MIN(age) AS age_min, MAX(age) AS age_max FROM people 
+--SQL Basics: Simple DISTINCT
+SELECT DISTINCT age FROM people

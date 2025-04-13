@@ -32,3 +32,5 @@ SELECT * FROM participants WHERE age>20 AND attending;
 SELECT SUM(age) as age_sum FROM people
 --SQL Grasshopper: Select Columns
 SELECT custid,	custname,custstate FROM customers
+--SQL Basics: Mod
+SELECT MOD(number1,number2) AS mod FROM decimals

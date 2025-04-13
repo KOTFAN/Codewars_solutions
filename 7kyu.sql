@@ -16,3 +16,7 @@ SELECT id,name,POSITION(',' IN characteristics) AS comma FROM monsters
 ORDER BY comma ASC
 --SQL Basics: Repeat and Reverse
 SELECT CONCAT(name,name,name) AS name,REVERSE(characteristics) AS characteristics FROM monsters
+--BASICS: Length based SELECT with LIKE
+SELECT first_name, last_name FROM names 
+WHERE first_name LIKE '______%';
+

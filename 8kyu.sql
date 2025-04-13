@@ -24,3 +24,7 @@ SELECT * FROM travelers WHERE NOT country='USA' AND NOT country='Mexico' AND NOT
 SELECT MIN(age) AS age_min, MAX(age) AS age_max FROM people 
 --SQL Basics: Simple DISTINCT
 SELECT DISTINCT age FROM people
+--Register for the Party (SQL for Beginners #3)
+INSERT INTO participants(name,age, attending)
+VALUES ('KOTFAN', 21, true);
+SELECT * FROM participants WHERE age>20 AND attending;

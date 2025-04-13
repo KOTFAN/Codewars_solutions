@@ -11,3 +11,6 @@ ORDER BY capital ASC
 LIMIT 3
 --SQL Basics: Raise to the Power
 SELECT POWER(number1,number2) AS result FROM decimals
+--SQL Basics - Position
+SELECT id,name,POSITION(',' IN characteristics) AS comma FROM monsters
+ORDER BY comma ASC

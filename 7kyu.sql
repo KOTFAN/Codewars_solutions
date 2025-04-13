@@ -27,3 +27,6 @@ OR (quality1='studious' OR quality2='intelligent')
 OR (quality1='hufflepuff' OR quality2='hufflepuff')
 --Easy SQL: Bit Length
 SELECT id, LENGTH(name) * 8 as name, birthday, LENGTH(race) * 8 as race FROM demographics;
+--SQL Basics: Maths with String Manipulations
+SELECT BIT_LENGTH(name)+LENGTH(race) AS calculation FROM demographics
+

@@ -29,4 +29,5 @@ OR (quality1='hufflepuff' OR quality2='hufflepuff')
 SELECT id, LENGTH(name) * 8 as name, birthday, LENGTH(race) * 8 as race FROM demographics;
 --SQL Basics: Maths with String Manipulations
 SELECT BIT_LENGTH(name)+LENGTH(race) AS calculation FROM demographics
-
+--Easy SQL: ASCII Converter
+SELECT id,ASCII(name) as name,birthday,ASCII(race)as race FROM demographics

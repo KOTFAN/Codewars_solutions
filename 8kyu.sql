@@ -30,3 +30,5 @@ VALUES ('KOTFAN', 21, true);
 SELECT * FROM participants WHERE age>20 AND attending;
 --SQL Basics: Simple SUM
 SELECT SUM(age) as age_sum FROM people
+--SQL Grasshopper: Select Columns
+SELECT custid,	custname,custstate FROM customers

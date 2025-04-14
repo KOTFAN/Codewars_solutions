@@ -55,3 +55,6 @@ FROM products
 JOIN companies
 
 ON products.company_id = companies.id;
+
+--Easy SQL: Cube Root and Natural Log
+SELECT CBRT(number1) as cuberoot , LN(number2) as logarithm FROM decimals

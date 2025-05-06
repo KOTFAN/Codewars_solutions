@@ -1802,3 +1802,10 @@ function datingRange(age) {
 const Ball = function (ballType = 'regular') {
    this.ballType = ballType
 };
+//Classic Hello World
+class Solution {
+
+   static main() {
+      console.log('Hello World!')
+   }
+}

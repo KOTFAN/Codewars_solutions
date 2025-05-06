@@ -1935,3 +1935,11 @@ class Ship {
       return false
    }
 }
+//Circular Objects #1 - Running around in circles
+const circular = {
+   value: 'Hello World',
+   get self() {
+      return this
+   }
+}
+

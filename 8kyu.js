@@ -1830,3 +1830,21 @@ Ghost.prototype.getRandomColor = function () {
    const randomNumberInZeroToColorsLengthDiap = Math.floor(Math.random() * colorsArrLength)
    return this.colors[randomNumberInZeroToColorsLengthDiap]
 }
+
+//Playing with cubes II
+class Cube {
+   constructor(side = 0) {
+      if (side > 0) {
+         this.side = side;
+      } else {
+         this.side = Math.abs(side);
+      }
+   }
+   getSide() {
+      return this.side;
+   }
+   setSide(n) {
+      this.side = Math.abs(n);
+
+   }
+}

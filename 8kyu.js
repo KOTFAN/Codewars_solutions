@@ -1943,3 +1943,16 @@ const circular = {
    }
 }
 
+
+function NameMe(first, last) {
+   this.firstName = first;
+   this.lastName = last;
+   this.name = this.firstName + ' ' + this.lastName;
+}
+
+//SpeedCode #3 × Fun with ES6 Classes #5 - Dogs and Classes
+class Labrador extends Dog {
+   constructor(name, age, gender, master) {
+      super(name, age, gender, "Labrador", "Large", master, true)
+   }
+}

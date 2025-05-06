@@ -1956,3 +1956,12 @@ class Labrador extends Dog {
       super(name, age, gender, "Labrador", "Large", master, true)
    }
 }
+
+//Improving Math.round(x)
+
+Math.roundTo = function (number, precision) {
+
+   const deep = 10 ** precision
+
+   return Math.round(number * deep) / deep
+}

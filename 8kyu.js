@@ -1765,3 +1765,23 @@ function tripleTrouble(one, two, three) {
 function printArray(array) {
    return array.toString()
 }
+
+//They say that only the name is long enough to attract attention. They also said that only a simple Kata will have someone to solve it. This is a sadly story #1: Are they opposite?
+String.prototype.swapReqiser = function () {
+   return this.split('').map((l) => {
+      if (l === l.toUpperCase()) {//A === A
+         return l.toLowerCase()
+      }
+      else {
+         return l.toUpperCase()
+      }
+   }).join('')
+}
+
+function isOpposite(s1, s2) {
+   if (s1 && s1.swapReqiser() === s2) {
+      return true
+   }
+   return false
+
+}

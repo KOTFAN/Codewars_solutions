@@ -1918,3 +1918,20 @@ class Woman extends Human {
       super(name)
    }
 }
+
+//OOP: Object Oriented Piracy
+class Ship {
+   constructor(draft, crew) {
+      this.draft = draft
+      this.crew = crew
+   }
+
+   isWorthIt() {
+      const worthMin = 20;
+
+      if ((this.draft - 1.5 * this.crew) > worthMin) {
+         return true
+      }
+      return false
+   }
+}

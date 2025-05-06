@@ -1809,3 +1809,13 @@ class Solution {
       console.log('Hello World!')
    }
 }
+//Classy Extentions
+class Cat extends Animal {
+   constructor(name) {
+      super(name)
+   }
+
+   speak() {
+      return `${this.name} meows.`
+   }
+}

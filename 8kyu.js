@@ -1965,3 +1965,17 @@ Math.roundTo = function (number, precision) {
 
    return Math.round(number * deep) / deep
 }
+
+//Barking mad
+function Dog(breed) {
+   this.breed = breed;
+}
+
+
+Dog.prototype.bark = function () {
+   return "Woof";
+};
+
+var snoopy = new Dog("Beagle");
+
+var scoobydoo = new Dog("Great Dane");

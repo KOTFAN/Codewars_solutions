@@ -1760,3 +1760,8 @@ function tripleTrouble(one, two, three) {
    }
    return res.join('')
 }
+
+//Printing Array elements with Comma delimiters
+function printArray(array) {
+   return array.toString()
+}

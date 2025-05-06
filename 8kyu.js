@@ -1785,3 +1785,16 @@ function isOpposite(s1, s2) {
    return false
 
 }
+//Age Range Compatibility Equation
+function datingRange(age) {
+   const minMaxDatingAge = [age, age]
+   if (age <= 14) {
+      minMaxDatingAge[0] = Math.floor(age - 0.10 * age)
+      minMaxDatingAge[1] = Math.floor(age + 0.10 * age)
+   } else {
+      minMaxDatingAge[0] = Math.floor(age / 2 + 7)
+      minMaxDatingAge[1] = Math.floor(2 * (age - 7))
+
+   }
+   return minMaxDatingAge.join('-')
+}

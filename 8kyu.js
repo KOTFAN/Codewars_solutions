@@ -1798,3 +1798,7 @@ function datingRange(age) {
    }
    return minMaxDatingAge.join('-')
 }
+//Regular Ball Super Ball
+const Ball = function (ballType = 'regular') {
+   this.ballType = ballType
+};

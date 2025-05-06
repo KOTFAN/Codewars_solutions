@@ -1819,3 +1819,14 @@ class Cat extends Animal {
       return `${this.name} meows.`
    }
 }
+//Color Ghost
+let Ghost = function (color) {
+   this.color = this.getRandomColor()
+};
+
+Ghost.prototype.colors = ['white', 'yellow', 'purple', 'red'];
+Ghost.prototype.getRandomColor = function () {
+   const colorsArrLength = this.colors.length
+   const randomNumberInZeroToColorsLengthDiap = Math.floor(Math.random() * colorsArrLength)
+   return this.colors[randomNumberInZeroToColorsLengthDiap]
+}

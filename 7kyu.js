@@ -305,4 +305,23 @@ class Person {
    }
 }
 
+//Fun with ES6 Classes #4 - Cubes and Setters
+class Cube {
+   constructor(length) {
+      this.length = length;
+   }
+   get volume() {
+      return this.length ** 3
+   }
+   set volume(value) {
+      this.length = value ** (1 / 3)
+   }
+
+   get surfaceArea() {
+      return 6 * (this.length ** 2)
+   }
+   set surfaceArea(value) {
+      this.length = (value / 6) ** (1 / 2)
+   }
+}
 

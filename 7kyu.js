@@ -294,3 +294,15 @@ Dog.prototype.checkDog = function () {
    if (!(this.vaccinated && this.wormed)) return `${this.name} can not be accepted`
 
 }
+
+//Refactored Greeting
+class Person {
+   constructor(name) {
+      this.name = name;
+   }
+   greet(yourName) {
+      return `Hello ${yourName}, my name is ${this.name}`;
+   }
+}
+
+

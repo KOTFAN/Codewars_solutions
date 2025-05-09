@@ -362,3 +362,12 @@ class Dog extends Animal {
       return `Hello ${this.master}`
    }
 }
+
+//Singleton Pattern
+class Singleton {
+   constructor() {
+      if (Singleton.instance) return Singleton.instance;
+      Singleton.instance = this;
+      return this;
+   }
+};

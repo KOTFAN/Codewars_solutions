@@ -409,3 +409,44 @@ class Block {
    }
 
 }
+//Bug fix: Is this component visible?
+class Component {
+   #id;
+   #parent;
+   #children;
+   #visibility;
+
+   constructor(id, children) {
+      this.#id = id;
+      this.#children = children;
+      this.#visibility = null;
+      this.#parent = null;
+      this.#children.forEach(child => child.#parent = this);
+   }
+
+   set visibility(value) {
+      this.#visibility = value;
+   }
+
+   get isVisible() {
+      console.log(this.#visibility)
+
+      //good
+      if (this.#visibility !== null) return this.#visibility
+      if (this.#id === 'Root') return true
+
+      //bad
+      else {
+         let parrent = this.#parent;
+         while (parrent !== null) {
+            if (parrent.#visibility !== null) return parrent.#visibility
+            parrent = parrent.#parent;
+         }
+         return true
+      }
+   }
+
+   toString() {
+      return this.#id;
+   }
+}

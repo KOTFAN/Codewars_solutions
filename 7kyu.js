@@ -450,3 +450,12 @@ class Component {
       return this.#id;
    }
 }
+
+//Static privacy
+class Class {
+   static #foo = 42;
+   static get foo() {
+      return Class.#foo;
+   }
+
+}

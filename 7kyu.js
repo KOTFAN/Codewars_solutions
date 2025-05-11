@@ -459,3 +459,14 @@ class Class {
    }
 
 }
+
+//Weight of its Contents
+function contentWeight(bottleWeight, scale) {
+   const [times, _, comparisonType] = scale.split(' ');
+   switch (comparisonType) {
+      case 'larger':
+         return Math.round(bottleWeight / (1 + 1 / Number(times)))
+      case 'smaller':
+         return bottleWeight / (1 + Number(times))
+   }
+}

@@ -470,3 +470,15 @@ function contentWeight(bottleWeight, scale) {
          return bottleWeight / (1 + Number(times))
    }
 }
+
+
+//Is this a triangle?
+function isTriangle(...sides) {
+   if (sides.every((s) => s > 0)) {
+      const [biggest, ...restSides] = sides.sort((a, b) => b - a)
+      if (biggest < restSides.reduce((a, v) => a + v, 0)) {
+         return true
+      }
+   }
+   return false
+}

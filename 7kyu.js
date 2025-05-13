@@ -514,3 +514,28 @@ function nbYear(p0, percent, aug, p) {
    return year
 
 }
+
+
+//What a "Classy" Song
+class Song {
+   #uniqueDAL;
+   #allListeners;
+   constructor(title, artist) {
+      this.title = title;
+      this.artist = artist;
+      this.#uniqueDAL = 0;
+      this.#allListeners = []
+
+   }
+   howMany(arr) {
+      arr.map(name => name.toLowerCase()).forEach(name => {
+         if (!this.#allListeners.includes(name)) {
+            this.#allListeners.push(name);
+            this.#uniqueDAL++
+         }
+      })
+      const todayListen = this.#uniqueDAL;
+      this.#uniqueDAL = 0
+      return todayListen
+   }
+}

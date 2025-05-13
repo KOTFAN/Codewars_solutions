@@ -496,3 +496,8 @@ function validatePIN(pin) {
    }
    return false
 }
+
+//Binary Addition
+function addBinary(a, b) {
+   return (a + b).toString(2)
+}

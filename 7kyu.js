@@ -501,3 +501,16 @@ function validatePIN(pin) {
 function addBinary(a, b) {
    return (a + b).toString(2)
 }
+
+//Growth of a Population
+function nbYear(p0, percent, aug, p) {
+   const saldo = 1 + percent * 0.01;
+   let year = 0;
+   let populationNow = p0;
+   while (populationNow < p) {
+      populationNow = Math.floor(populationNow * saldo + aug);
+      year++
+   }
+   return year
+
+}

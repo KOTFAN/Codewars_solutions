@@ -488,3 +488,11 @@ function rowSumOddNumbers(n) {
    return n ** 3
 }
 
+//Regex validate PIN code
+function validatePIN(pin) {
+   const nums = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0']
+   if ((pin.length === 4 || pin.length === 6) && pin.split('').every(n => nums.includes(n))) {
+      return true
+   }
+   return false
+}

@@ -2028,3 +2028,12 @@ function quote(fighter) {
          return "I'd like to take this chance to apologize.. To absolutely NOBODY!"
    }
 };
+
+//Crash Override
+function aliasGen(first, last) {
+   const [f, l] = [first[0].toUpperCase(), last[0].toUpperCase()]
+   if (firstName[f] && surname[l]) {
+      return `${firstName[f]} ${surname[l]}`
+   }
+   return "Your name must start with a letter from A - Z."
+}

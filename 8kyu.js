@@ -2064,3 +2064,11 @@ let rooms = {
       }
    },
 }
+
+//How old will I be in 2099?
+function calculateAge(startAge, finAge) {
+   if (startAge < finAge) return `You are ${finAge - startAge} year${finAge - startAge === 1 ? '' : 's'} old.`
+   if (startAge > finAge) return `You will be born in ${startAge - finAge} year${startAge - finAge === 1 ? '' : 's'}.`
+   else return "You were born this very year!"
+}
+

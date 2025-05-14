@@ -539,3 +539,18 @@ class Song {
       return todayListen
    }
 }
+
+//Competitive eating scoreboard
+function scoreboard(whoAteWhat) {
+   return whoAteWhat
+      .map(({ name, chickenwings, hamburgers, hotdogs }) => ({
+         name,
+         score: chickenwings * 5 + hamburgers * 3 + hotdogs * 2
+      }))
+      .sort((a, b) => {
+         if (a.score === b.score) {
+            return a.name.localeCompare(b.name)
+         }
+         return b.score - a.score
+      })
+}

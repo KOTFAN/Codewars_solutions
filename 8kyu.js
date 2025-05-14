@@ -1994,3 +1994,12 @@ function isVow(a) {
       return n
    })
 }
+
+
+function generateLink(user) {
+   //   const userName = user.split('').map((s)=>{
+   //     if(s === ' ') return '%20'
+   //     return s
+   //   }).join('')
+   return `http://www.codewars.com/users/${encodeURIComponent(user)}`
+}

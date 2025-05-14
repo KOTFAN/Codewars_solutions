@@ -554,3 +554,18 @@ function scoreboard(whoAteWhat) {
          return b.score - a.score
       })
 }
+
+//Thinkful - Object Drills: Quarks
+class Quark {
+   constructor(color, flavor) {
+      this.color = color;
+      this.flavor = flavor;
+   }
+   get baryon_number() {
+      return 1 / 3
+   }
+   interact(otherQuark) {
+      [otherQuark.color, this.color] = [this.color, otherQuark.color];
+
+   }
+}

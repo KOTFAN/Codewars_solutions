@@ -569,3 +569,7 @@ class Quark {
 
    }
 }
+//Re-open class
+String.prototype.myNewMethod = function () {
+   return this.toUpperCase()
+}

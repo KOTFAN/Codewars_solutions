@@ -2009,3 +2009,8 @@ function generateLink(user) {
 function twoHighest(arr) {
    return [...new Set(arr)].slice().sort((a, b) => b - a).slice(0, 2)
 }
+
+//Remove duplicates from list
+function distinct(a) {
+   return [...new Set(a)];
+}

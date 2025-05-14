@@ -2037,3 +2037,7 @@ function aliasGen(first, last) {
    }
    return "Your name must start with a letter from A - Z."
 }
+
+
+//Basic Training: Add item to an Array
+websites.push("codewars")

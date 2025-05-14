@@ -1979,3 +1979,18 @@ Dog.prototype.bark = function () {
 var snoopy = new Dog("Beagle");
 
 var scoobydoo = new Dog("Great Dane");
+
+
+
+//Is there a vowel in there?
+function isVow(a) {
+   const vowels = ['a', 'e', 'i', 'o', 'u'];
+   const vowelsAscii = vowels.map(l => l.charCodeAt())
+   return a.map((n) => {
+      const voweleIndex = vowelsAscii.indexOf(n)
+      if (voweleIndex !== -1) {
+         return vowels[voweleIndex]
+      }
+      return n
+   })
+}

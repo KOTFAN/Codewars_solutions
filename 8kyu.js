@@ -2041,3 +2041,8 @@ function aliasGen(first, last) {
 
 //Basic Training: Add item to an Array
 websites.push("codewars")
+
+//Take an Arrow to the knee, Functionally
+const arrowFunc = function (arr) {
+   return arr.map(n => String.fromCharCode(n)).join('');
+}

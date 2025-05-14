@@ -2003,3 +2003,9 @@ function generateLink(user) {
    //   }).join('')
    return `http://www.codewars.com/users/${encodeURIComponent(user)}`
 }
+
+
+//Return Two Highest Values in List
+function twoHighest(arr) {
+   return [...new Set(arr)].slice().sort((a, b) => b - a).slice(0, 2)
+}

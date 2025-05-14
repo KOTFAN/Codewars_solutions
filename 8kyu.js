@@ -2014,3 +2014,6 @@ function twoHighest(arr) {
 function distinct(a) {
    return [...new Set(a)];
 }
+
+//get ascii value of character
+const getASCII = c => c.charCodeAt()

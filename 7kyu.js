@@ -573,3 +573,13 @@ class Quark {
 String.prototype.myNewMethod = function () {
    return this.toUpperCase()
 }
+
+//Numbers in different systems
+function sysNums(n, sys) {
+
+   const newNum = n.toString(sys);
+   if (isNaN(Number(newNum)) || newNum.includes('e')) {
+      return newNum
+   }
+   return Number(newNum)
+}

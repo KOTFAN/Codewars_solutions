@@ -595,3 +595,12 @@ const binaryArrayToNumber = arr => {
 
    return res
 };
+
+
+Array.prototype.map = function(cb){
+   const arr = [];
+   for(let i = 0; i<this.length; i++){
+     arr.push(cb(this[i]))
+   }
+   return arr
+ }

@@ -272,3 +272,10 @@ function digPow(n, p) {
 
    return k
 }
+
+//Decode the Morse code
+const decodeMorse = function (morseCode) {
+   return morseCode.split('   ').map((s) => s.split(' ').map((l) => MORSE_CODE[l]).join('')).join(' ').trim()
+   // Your code here
+   // You can use MORSE_CODE[morse]
+}

@@ -2117,3 +2117,22 @@ function correctPolishLetters(string) {
    return string.split('').map((l) => diacriticsMap[l] ? diacriticsMap[l] : l).join('')
 
 }
+
+//No zeros for heroes
+function noBoringZeros(n) {
+   //can just /10 while last digit!==0
+   if (n === 0) return n
+
+   const res = String(n).split('')
+
+   const reversedArr = res.slice().reverse();
+
+
+   for (const num of reversedArr) {
+      if (num === '0') {
+         res.pop()
+      } else {
+         return Number(res.join(''))
+      }
+   }
+}

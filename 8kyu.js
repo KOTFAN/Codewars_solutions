@@ -2103,3 +2103,17 @@ function remove(string) {
 function amIWilson(p) {
    return p === 5 || p === 13 || p === 563;
 }
+
+
+// Polish alphabet
+function correctPolishLetters(string) {
+   const diacriticsMap = {
+      'ą': 'a', 'ć': 'c', 'ę': 'e', 'ł': 'l',
+      'ń': 'n', 'ó': 'o', 'ś': 's', 'ź': 'z', 'ż': 'z',
+      'Ą': 'A', 'Ć': 'C', 'Ę': 'E', 'Ł': 'L',
+      'Ń': 'N', 'Ó': 'O', 'Ś': 'S', 'Ź': 'Z', 'Ż': 'Z'
+   };
+
+   return string.split('').map((l) => diacriticsMap[l] ? diacriticsMap[l] : l).join('')
+
+}

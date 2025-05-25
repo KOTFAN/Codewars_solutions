@@ -2082,3 +2082,19 @@ function circleCircumference(circle) {
 function symmetricPoint([p1, p2], [q1, q2]) {
    return [2 * q1 - p1, 2 * q2 - p2]
 }
+
+
+function remove(string) {
+
+   const reversedArr = string.split('').reverse()
+
+   const res = string.split('')
+
+   for (let i = 0; i < reversedArr.length; i++) {
+      if (reversedArr[i] === '!') {
+         res.pop()
+      } else {
+         return res.join('')
+      }
+   }
+}

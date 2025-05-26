@@ -2145,4 +2145,13 @@ function addFive(num) {
 //Bin to Decimal
 function binToDec(bin) {//toString(10)
    return bin.split('').reverse().map((el, i) => Number(el) * (2 ** i)).reduce((acc, v) => acc + v, 0)
+}//parseInt(bin,2)
+
+//Generate range of integers
+function generateRange(min, max, step) {
+   const res = [];
+   for (let i = min; i <= max; i += step) {
+      res.push(i)
+   }
+   return res
 }

@@ -2141,3 +2141,8 @@ function noBoringZeros(n) {
 function addFive(num) {
    return num + 5
 }
+
+//Bin to Decimal
+function binToDec(bin) {//toString(10)
+   return bin.split('').reverse().map((el, i) => Number(el) * (2 ** i)).reduce((acc, v) => acc + v, 0)
+}

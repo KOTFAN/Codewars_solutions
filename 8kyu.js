@@ -2193,3 +2193,9 @@ function equal5() {
       b = v3; //set number value to b
    return a % b;
 }
+
+//Price of Mangoes
+function mango(quantity, price) {
+   const payableQuantity = (quantity - quantity % 3) * 2 / 3 + quantity % 3
+   return payableQuantity * price
+}

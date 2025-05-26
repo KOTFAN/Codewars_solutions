@@ -2199,3 +2199,12 @@ function mango(quantity, price) {
    const payableQuantity = (quantity - quantity % 3) * 2 / 3 + quantity % 3
    return payableQuantity * price
 }
+
+//Remove First and Last Character Part Two
+function array(s) {
+   const charsArr = s.split(',')
+   if (charsArr.length > 2) {
+      return charsArr.slice(1, -1).join(' ')
+   }
+   return null
+}

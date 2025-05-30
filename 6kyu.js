@@ -314,3 +314,13 @@ function findEvenIndex(arr) {
    return -1;
 
 }
+
+//Find the unique number
+function findUniq(arr) {
+   const allNums = new Set(arr)
+   for (const num of allNums) {
+      if (arr.indexOf(num) === arr.lastIndexOf(num)) {
+         return num
+      }
+   }
+}

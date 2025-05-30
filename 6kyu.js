@@ -292,3 +292,25 @@ function solution(str) {
    }
    return result
 }
+
+//Equal Sides Of An Array
+function findEvenIndex(arr) {
+   for (let i = 0; i < arr.length; i++) {
+      let sumOfLeft = 0;
+      let sumOfRigth = 0;
+      for (let j = 0; j < arr.length; j++) {
+         if (j < i) {
+            sumOfLeft += arr[j]
+         }
+         if (j > i) {
+            sumOfRigth += arr[j]
+         }
+      }
+
+      if (sumOfLeft === sumOfRigth) {
+         return i
+      }
+   }
+   return -1;
+
+}

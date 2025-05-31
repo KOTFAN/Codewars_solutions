@@ -324,3 +324,24 @@ function findUniq(arr) {
       }
    }
 }
+
+//Sort the odd
+function sortArray(array) {
+   const res = [...array]
+   const oddIndexes = [];
+   const oddNums = [];
+   for (let i = 0; i < array.length; i++) {
+      if (Math.abs(array[i] % 2) === 1) {
+         oddIndexes.push(i)
+         oddNums.push(array[i])
+      }
+
+   }
+   oddNums.sort((a, b) => a - b)//can be better
+
+   for (let i = 0, oddIndex = oddIndexes[0]; i < oddNums.length; i++, oddIndex = oddIndexes[i]) {
+
+      res[oddIndex] = oddNums[i]
+   }
+   return res
+}

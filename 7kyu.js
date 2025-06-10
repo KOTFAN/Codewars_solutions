@@ -612,3 +612,18 @@ var number = function (busStops) {
    return peopleInBus
 
 }
+
+//Find the divisors!
+function divisors(integer) {
+   const res = [];
+   for (let i = 2; i < integer; i++) {
+      if (integer % i === 0) {
+         res.push(i)
+      }
+   }
+   if (res.length) {
+      return res
+   } else {
+      return `${integer} is prime`
+   }
+}

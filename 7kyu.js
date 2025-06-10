@@ -597,10 +597,18 @@ const binaryArrayToNumber = arr => {
 };
 
 
-Array.prototype.map = function(cb){
+Array.prototype.map = function (cb) {
    const arr = [];
-   for(let i = 0; i<this.length; i++){
-     arr.push(cb(this[i]))
+   for (let i = 0; i < this.length; i++) {
+      arr.push(cb(this[i]))
    }
    return arr
- }
+}
+
+//Number of People in the Bus
+var number = function (busStops) {
+   let peopleInBus = 0;
+   busStops.forEach(([pIn, pOut]) => peopleInBus += (pIn - pOut))
+   return peopleInBus
+
+}

@@ -627,3 +627,8 @@ function divisors(integer) {
       return `${integer} is prime`
    }
 }
+
+//Reverse words
+function reverseWords(str) {
+   return str.split(' ').map((w) => w.split('').reverse().join('')).join(' ')
+}

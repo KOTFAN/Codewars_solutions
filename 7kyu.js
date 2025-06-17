@@ -632,3 +632,14 @@ function divisors(integer) {
 function reverseWords(str) {
    return str.split(' ').map((w) => w.split('').reverse().join('')).join(' ')
 }
+
+
+//Odd or Even?
+function oddOrEven(arr) {
+   const sum = arr.reduce((a, v) => a + v, 0)
+   if (sum % 2 === 0) {
+      return 'even'
+   }
+   return 'odd'
+
+}

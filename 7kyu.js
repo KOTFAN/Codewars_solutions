@@ -680,3 +680,18 @@ function removeSmallest(numbers) {
 const number = function (array) {
    return array.map((letter, index) => `${index + 1}: ${letter}`)
 }
+
+//Money, Money, Money
+function calculateYears(principal, interest, tax, desired) {
+   let finalSum = principal;
+   let years = 0;
+
+
+   while (finalSum < desired) {
+      const prosents = finalSum * (1 + interest) - finalSum
+
+      finalSum = finalSum + prosents * (1 - tax)
+      years++;
+   }
+   return years
+}

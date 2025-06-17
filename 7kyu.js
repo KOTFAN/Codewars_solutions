@@ -643,3 +643,18 @@ function oddOrEven(arr) {
    return 'odd'
 
 }
+
+//Sum of the first nth term of Series
+function SeriesSum(n) {
+   let sum = 0;
+   if (n < 1) {
+      return '0.00'
+   }
+   for (let i = 0; i < n; i++) {
+      sum += 1 / (1 + 3 * i)
+   }
+
+   const res = (Math.round(sum * 100) / 100).toFixed(2)
+
+   return res
+}

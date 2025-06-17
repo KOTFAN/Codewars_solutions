@@ -658,3 +658,20 @@ function SeriesSum(n) {
 
    return res
 }
+
+//Remove the minimum
+function removeSmallest(numbers) {
+
+   if (numbers.length) {
+      const min = Math.min(...numbers)
+      console.log(numbers.indexOf(min))
+
+      const res = [...numbers]
+      res.splice(numbers.indexOf(min), 1)
+
+      return res
+
+   }
+
+   return [];
+}

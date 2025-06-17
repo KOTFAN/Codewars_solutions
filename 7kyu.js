@@ -675,3 +675,8 @@ function removeSmallest(numbers) {
 
    return [];
 }
+
+//Testing 1-2-3
+const number = function (array) {
+   return array.map((letter, index) => `${index + 1}: ${letter}`)
+}

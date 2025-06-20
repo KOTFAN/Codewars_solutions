@@ -2250,3 +2250,8 @@ function arrayMadness(a, b) {
    const sumOfCubes = b.reduce((a, v) => a + (v ** 3), 0)
    return sumOfSquares > sumOfCubes
 }
+
+//Enumerable Magic - Does My List Include This?
+function include(arr, item) {
+   return arr.includes(item)
+}

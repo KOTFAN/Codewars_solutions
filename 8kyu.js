@@ -2213,3 +2213,8 @@ function array(s) {
 function take(arr, n) {
    return arr.slice(0, n)
 }
+
+//Grasshopper - Array Mean
+function findAverage(nums) {
+   return nums.reduce((a, v) => a + v, 0) / nums.length
+}

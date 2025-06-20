@@ -2242,3 +2242,11 @@ function popElement(arr) {
 
    return arr
 }
+
+
+//SpeedCode #2 - Array Madness
+function arrayMadness(a, b) {
+   const sumOfSquares = a.reduce((a, v) => a + (v ** 2), 0)
+   const sumOfCubes = b.reduce((a, v) => a + (v ** 3), 0)
+   return sumOfSquares > sumOfCubes
+}

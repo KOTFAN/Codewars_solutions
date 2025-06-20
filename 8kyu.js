@@ -2269,7 +2269,7 @@ function remainder(n, m) {
    return l % s
 }
 
-
+//Find Nearest square number
 function nearestSq(n) {
    //    if(Math.sqrt(n)===Math.floor(Math.sqrt(n))){
    //      return n

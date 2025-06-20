@@ -2268,3 +2268,30 @@ function remainder(n, m) {
    }
    return l % s
 }
+
+
+function nearestSq(n) {
+   //    if(Math.sqrt(n)===Math.floor(Math.sqrt(n))){
+   //      return n
+   //    }else{
+   //     const left =Math.sqrt(n-1)-  Math.floor(Math.sqrt(n-1)) 
+   //     const rigth =Math.sqrt(n+1) - Math.floor(Math.sqrt(n+1))
+
+   //     console.log(n)
+   //     console.log('left',left)
+   //     console.log('rigth',rigth)
+
+
+   //     if (left === 0 ) {
+   //       return n - 1;
+   //     } else if (rigth === 0) {
+   //       return n + 1;
+   //     } else if( left < 1-rigth){
+   //       return nearestSq(n-1)
+   //     }else{
+   //       return nearestSq(n+1)
+   //     }
+   //    }
+
+   return Math.round(Math.sqrt(n)) ** 2
+}

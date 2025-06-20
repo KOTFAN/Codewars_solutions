@@ -2255,3 +2255,16 @@ function arrayMadness(a, b) {
 function include(arr, item) {
    return arr.includes(item)
 }
+
+//Find the Remainder
+function remainder(n, m) {
+   let l, s;
+   if (n >= m) {
+      l = n;
+      s = m;
+   } else {
+      l = m;
+      s = n;
+   }
+   return l % s
+}

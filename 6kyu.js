@@ -357,3 +357,23 @@ function findMissingLetter(array) {
    }
 
 }
+
+//Delete occurrences of an element if it occurs more than n times
+function deleteNth(arr, n) {//every element should be only no more than n-times
+
+   const res = [];
+
+   const uniqueElements = [...new Set(arr)];
+   const repeatCount = new Array(uniqueElements.length).fill(0)
+
+   for (let i = 0; i < arr.length; i++) {
+      const uniqueIndex = uniqueElements.indexOf(arr[i])
+      const uniqueElentCount = repeatCount[uniqueIndex]
+
+      if (uniqueElentCount < n) {
+         repeatCount[uniqueIndex] = repeatCount[uniqueIndex] + 1;
+         res.push(arr[i])
+      }
+   }
+   return res
+}

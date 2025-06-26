@@ -700,3 +700,14 @@ function calculateYears(principal, interest, tax, desired) {
 function minMax(arr) {
    return [Math.min(...arr), Math.max(...arr)];
 }
+
+//Don't give me five!
+function dontGiveMeFive(start, end) {
+   let counter = 0;
+   for (let i = start; i <= end; i++) {
+      if (!String(i).includes('5')) {
+         counter++
+      }
+   }
+   return counter
+}

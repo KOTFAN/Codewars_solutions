@@ -377,3 +377,33 @@ function deleteNth(arr, n) {//every element should be only no more than n-times
    }
    return res
 }
+
+
+//Count the smiley faces!
+function countSmileys(arr) {
+   const validEyes = [':', ';']
+   const validNose = ['-', '~']
+   const validSmiling = [')', 'D']
+
+   const count = arr.reduce((numOfValid, face) => {
+
+      const splitedFace = face.split('')
+      if (splitedFace.length === 2) {
+         console.log(numOfValid)
+         //Eyes and Smiling
+         if (validEyes.includes(splitedFace[0]) && validSmiling.includes(splitedFace[1])) {
+            return numOfValid + 1
+         }
+      }
+      if (splitedFace.length === 3) {
+         //Eyes Nose and Smiling
+         if (validEyes.includes(splitedFace[0]) &&
+            validNose.includes(splitedFace[1]) &&
+            validSmiling.includes(splitedFace[2])) {
+            return numOfValid + 1
+         }
+      }
+      return numOfValid
+   }, 0)
+   return count
+}

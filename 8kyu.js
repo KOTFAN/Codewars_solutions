@@ -2295,3 +2295,13 @@ function nearestSq(n) {
 
    return Math.round(Math.sqrt(n)) ** 2
 }
+
+//Parse float
+function parseF(s) {
+   const res = parseFloat(s)
+   if (!isNaN(res)) {
+      return res;
+   }
+   return null
+
+}

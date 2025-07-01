@@ -2338,3 +2338,11 @@ const cannonsReady = (gunners) => {
    const isAllReady = Object.values(gunners).every((w) => w === 'aye');
    return isAllReady ? 'Fire!' : 'Shiver me timbers!'
 }
+
+//Sum of Multiples
+function sumMul(n, m) {
+   if (m <= n) return "INVALID";
+   const a_n = (m % n) ? m - (m % n) : m - n
+   const count = a_n / n
+   return (n + a_n) * count / 2
+}

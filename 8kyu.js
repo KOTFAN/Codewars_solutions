@@ -2310,3 +2310,18 @@ function parseF(s) {
 function twoDecimalPlaces(n) {
    return Math.round(n * 100) / 100
 }
+
+
+//isReallyNaN
+const isReallyNaN = (val) => {
+   if (isNaN(val)) {
+
+      if (typeof val === 'number') {
+         return true
+      }
+
+      return false
+   }
+   return false
+
+};

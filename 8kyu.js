@@ -2325,3 +2325,10 @@ const isReallyNaN = (val) => {
    return false
 
 };
+
+//Duck Duck Goose
+function duckDuckGoose(players, goose) {
+   const realIndex = goose % players.length - 1
+
+   return players.at(realIndex).name
+}

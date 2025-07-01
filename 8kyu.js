@@ -2332,3 +2332,9 @@ function duckDuckGoose(players, goose) {
 
    return players.at(realIndex).name
 }
+
+//Pirates!! Are the Cannons ready!??
+const cannonsReady = (gunners) => {
+   const isAllReady = Object.values(gunners).every((w) => w === 'aye');
+   return isAllReady ? 'Fire!' : 'Shiver me timbers!'
+}

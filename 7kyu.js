@@ -730,3 +730,13 @@ function applyFeedback(battlescape, enemy, position) {
 
 const splitEmoji = (string) =>
   [...new Intl.Segmenter().segment(string)].map((x) => x.segment);
+
+//Check your arguments
+function objectType(obj) {
+  //if no arguments are passed, defaults to null
+
+  if (arguments.length) {
+    return Object.prototype.toString.call(obj);
+  }
+  return Object.prototype.toString.call(null);
+}

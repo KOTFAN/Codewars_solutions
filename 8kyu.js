@@ -2267,3 +2267,9 @@ function formatMoney(amount) {
     return "$" + amount.toFixed(2);
   }
 }
+
+//How many lightsabers do you own?
+function howManyLightsabersDoYouOwn(name = "") {
+  if (name === "Zach") return 18;
+  return 0;
+}

@@ -740,3 +740,22 @@ function objectType(obj) {
   }
   return Object.prototype.toString.call(null);
 }
+
+//Find the stray number
+
+function stray(numbers) {
+  let singleNum = numbers[0];
+  let i = 1;
+  while (singleNum === numbers[i]) {
+    i++;
+  }
+
+  if (i + 1 === numbers.length) {
+    singleNum = numbers[i];
+  }
+  if (numbers[i] !== numbers[i + 1]) {
+    singleNum = numbers[i];
+  }
+
+  return singleNum;
+}

@@ -2254,3 +2254,8 @@ function chromosomeCheck(sperm) {
     return "Congratulations! You're going to have a daughter.";
   }
 }
+
+//Training JS #5: Basic data types--Object
+function animal({ color, legs, name }) {
+  return `This ${color} ${name} has ${legs} legs.`;
+}

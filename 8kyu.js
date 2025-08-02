@@ -2273,3 +2273,14 @@ function howManyLightsabersDoYouOwn(name = "") {
   if (name === "Zach") return 18;
   return 0;
 }
+
+//Sum of differences in array
+function sumOfDifferences(arr) {
+  const sortedArr = arr.slice().sort((a, b) => b - a);
+  let res = 0;
+  for (let i = 0; i < sortedArr.length - 1; i++) {
+    res += sortedArr[i] - sortedArr[i + 1];
+  }
+
+  return res;
+}

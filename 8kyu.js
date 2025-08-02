@@ -2259,3 +2259,11 @@ function chromosomeCheck(sperm) {
 function animal({ color, legs, name }) {
   return `This ${color} ${name} has ${legs} legs.`;
 }
+
+//Dollars and Cents
+function formatMoney(amount) {
+  //   amount is Int or Float
+  if (typeof amount === "number") {
+    return "$" + amount.toFixed(2);
+  }
+}
